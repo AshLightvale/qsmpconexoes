@@ -7,38 +7,38 @@ export const ALL_CONNECTIONS: {
 } = {
 	"1112023": [
 		{
-			name: "Números",
-			items: ["1", "6", "8", "9"],
+			name: "Cubitos Verdes",
+			items: ["Cellbit", "Mike", "Slime", "Philza"],
 		},
 		{
-			name: "Letras",
-			items: ["F", "N", "Y", "A"],
+			name: "Teve cabelo cortado",
+			items: ["Etoiles", "Baghera", "Pac", "Walter Bob"],
 		},
 		{
-			name: "Símbolos",
-			items: ["#", "%", "&", "@"],
+			name: "____ + Roier",
+			items: ["Chef", "Fotógrafo", "Cunhado", "Furry"],
 		},
 		{
-			name: "Pontuação",
-			items: ["!", ".", "?", ","],
+			name: "Trabalhos de Richarlyson",
+			items: ["Doutor", "Pintor", "Guitarrista", "Cupido"],
 		},
 	],
 	"2112023": [
 		{
-			name: "ASASASAS",
-			items: ["1", "6", "8", "9"],
+			name: "Cubitos Verdes",
+			items: ["Cellbit", "Mike", "Slime", "Philza"],
 		},
 		{
-			name: "DFDFDFD",
-			items: ["F", "N", "Y", "A"],
+			name: "Teve cabelo cortado",
+			items: ["Etoiles", "Baghera", "Pac", "Walter Bob"],
 		},
 		{
-			name: "GHGHGHGH",
-			items: ["#", "%", "&", "@"],
+			name: "____ + Roier",
+			items: ["Chef", "Fotógrafo", "Cunhado", "Furry"],
 		},
 		{
-			name: "JKJKJKK",
-			items: ["!", ".", "?", ","],
+			name: "Trabalhos de Richarlyson",
+			items: ["Doutor", "Pintor", "Guitarrista", "Cupido"],
 		},
 	],
 	"3112023": [
