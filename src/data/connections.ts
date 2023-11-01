@@ -8,7 +8,7 @@ export const ALL_CONNECTIONS: {
 	"1112023": [
 		{
 			name: "Cubitos Verdes",
-			items: ["Cellbit", "Mike", "Slime", "Philza"],
+			items: ["German", "Mike", "Slime", "Willyrex"],
 		},
 		{
 			name: "Teve cabelo cortado",
@@ -26,7 +26,7 @@ export const ALL_CONNECTIONS: {
 	"2112023": [
 		{
 			name: "Cubitos Verdes",
-			items: ["Cellbit", "Mike", "Slime", "Philza"],
+			items: ["German", "Mike", "Slime", "Willyrex"],
 		},
 		{
 			name: "Teve cabelo cortado",
