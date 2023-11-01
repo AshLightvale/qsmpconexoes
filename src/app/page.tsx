@@ -126,7 +126,7 @@ export default function Game() {
 						<ArrowLeft size="1.25rem" />
 					</Link>
 				</Button>
-				<h1 className="text-xl font-bold">Conexões QSMP</h1>
+				<h1 className="text-xl font-bold">QSMP Conexões</h1>
 				<Button variant="ghost" size="icon" onClick={() => setMemory((old) => ({ ...old, [today]: [] }))}>
 					<RotateCw size="1.25rem" />
 				</Button>
@@ -164,7 +164,7 @@ export default function Game() {
 										copyResult(
 											`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
 												""
-											)}\n\nPara jogar acesse: qsmpconexoes.vercel.app`
+											)}\n\nPara jogar também acesse: qsmpconexoes.vercel.app`
 										);
 
 										setCopiedAlert(true);
