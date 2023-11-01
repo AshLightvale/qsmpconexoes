@@ -127,7 +127,7 @@ export default function Game() {
 					</Link>
 				</Button>
 				<h1 className="text-xl font-bold">QSMP Conexões</h1>
-				<Button variant="ghost" size="icon" onClick={() => setMemory((old) => ({ ...old, [today]: [] }))}>
+				<Button className="opacity-0 pointer-events-none" variant="ghost" size="icon">
 					<RotateCw size="1.25rem" />
 				</Button>
 			</header>
