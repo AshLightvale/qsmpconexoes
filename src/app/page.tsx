@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
-import { ArrowLeft, HelpCircle, Loader2 } from "lucide-react";
+import { ArrowLeft, RotateCw, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
@@ -127,8 +127,8 @@ export default function Game() {
 					</Link>
 				</Button>
 				<h1 className="text-xl font-bold">Conexões QSMP</h1>
-				<Button variant="ghost" size="icon">
-					<HelpCircle size="1.25rem" />
+				<Button variant="ghost" size="icon" onClick={() => setMemory((old) => ({ ...old, [today]: [] }))}>
+					<RotateCw size="1.25rem" />
 				</Button>
 			</header>
 			{/* <pre>{JSON.stringify(memory[today], null, 2)}</pre> */}
