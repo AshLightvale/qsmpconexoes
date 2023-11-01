@@ -3,49 +3,85 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
-import { ArrowLeft, HelpCircle } from "lucide-react";
+import { ArrowLeft, HelpCircle, Loader2 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
-import { useCopyToClipboard } from "@/utils/useCopytoClipboard";
+import { useEffect, useMemo, useState } from "react";
+import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
+import { shuffle } from "@/utils/shuffle";
+import { ALL_CONNECTIONS } from "@/data/connections";
 
 type Connection = {
-	name: string;
-	color: string;
+	name?: string;
+	color?: string;
 	items: string[];
 };
 
+// const CONNECTIONS = [
+// 	{
+// 		name: "Números",
+// 		items: ["1", "6", "8", "9"],
+// 	},
+// 	{
+// 		name: "Letras",
+// 		items: ["F", "N", "Y", "A"],
+// 	},
+// 	{
+// 		name: "Símbolos",
+// 		items: ["#", "%", "&", "@"],
+// 	},
+// 	{
+// 		name: "Pontuação",
+// 		items: ["!", ".", "?", ","],
+// 	},
+// ];
+
+const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
+
 export default function Game() {
-	const [tries, setTries] = useState(0);
-	const [corrects, setCorrects] = useState<Connection[]>([]);
 	const [selected, setSelected] = useState<string[]>([]);
-	const [status, setStatus] = useState<
-		"waiting" | "wrong" | "correct" | "over"
-	>("waiting");
-	const CONNECTIONS = [
-		{
-			name: "Números",
-			items: ["1", "6", "8", "9"],
-		},
-		{
-			name: "Letras",
-			items: ["F", "N", "Y", "A"],
-		},
-		{
-			name: "Símbolos",
-			items: ["#", "%", "&", "@"],
-		},
-		{
-			name: "Pontuação",
-			items: ["!", ".", "?", ","],
-		},
-	];
-	const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
-	const [connections, setConnections] = useState<Connection[]>(
-		CONNECTIONS.map((conn, i) => ({ color: COLORS[i], ...conn }))
-	);
-	const [result, setResult] = useState("");
+
 	const [_, copyResult] = useCopyToClipboard();
 	const [copiedAlert, setCopiedAlert] = useState(false);
+
+	const now = new Date();
+	const today = "" + now.getDate() + (now.getMonth() + 1) + now.getFullYear();
+
+	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
+
+	const [memory, setMemory] = useLocalStorage<{
+		[name: string]: Connection[];
+	}>("memory", {});
+
+	const [attempts, setAttempts] = useState<Connection[]>(memory[today] || []);
+
+	const [status, setStatus] = useState<
+		"waiting" | "wrong" | "correct" | "over"
+	>(
+		(memory[today] || []).filter((att) => att.name).length === 4
+			? "over"
+			: "waiting"
+	);
+
+	const connections = CONNECTIONS.map((conn, i) => ({
+		color: COLORS[i],
+		...conn,
+	})).filter((conn) => !attempts.map((att) => att.name).includes(conn.name));
+
+	const corrects = attempts.filter((attempt) => attempt.name);
+
+	const shuffledConnections = useMemo(() => {
+		return shuffle(
+			connections.map((connection) => connection.items).flat()
+		);
+	}, []);
+
+	const result = (memory[today] || []).map((attempt) =>
+		attempt.color
+			? ["🟩", "🟨", "🟥", "🟦"][COLORS.indexOf(attempt.color)]
+			: "❌"
+	);
+
+	const tries = (memory[today] || []).length;
 
 	function selectFourHandler(selected: string[]) {
 		const correctConnection = connections.find((connection) =>
@@ -55,24 +91,15 @@ export default function Game() {
 		if (correctConnection) {
 			setStatus("correct");
 			setTimeout(() => {
-				setCorrects((old) => [...old, correctConnection]);
-				setConnections((old) =>
-					old.filter((conn) => conn !== correctConnection)
-				);
+				setAttempts((old) => [...old, correctConnection]);
 			}, 1000);
-			setResult(
-				(old) =>
-					old +
-					["🟩", "🟨", "🟥", "🟦"][
-						COLORS.findIndex((c) => c === correctConnection.color)
-					]
-			);
 		} else {
 			setStatus("wrong");
-			setResult((old) => old + "❌");
+			setAttempts((old) => [
+				...old,
+				{ name: undefined, items: selected },
+			]);
 		}
-
-		setTries((old) => old + 1);
 
 		setTimeout(() => {
 			setStatus(
@@ -81,6 +108,10 @@ export default function Game() {
 			setSelected([]);
 		}, 1000);
 	}
+
+	useEffect(() => {
+		setMemory((old) => ({ ...old, [today]: attempts }));
+	}, [attempts, setMemory, today]);
 
 	return (
 		<div className="max-w-[512px] w-[90%] my-12">
@@ -100,100 +131,101 @@ export default function Game() {
 					<HelpCircle size="1.25rem" />
 				</Button>
 			</header>
-			<main className="pt-8">
-				{status === "over" && (
-					<motion.div
-						animate={{ height: "auto" }}
-						className="mb-4 h-0 bg-muted rounded-md px-6 py-4 text-center"
-					>
-						<div className="text-center">
-							<span className="block text-lg font-bold">
-								Parabéns!
-							</span>
-							<span>Você conseguiu em {tries} tentativas.</span>
-						</div>
-						<span className="mt-4 block">{result}</span>
-						<div className="mt-4">
-							{copiedAlert && (
-								<motion.span
-									className="block scale-0 opacity-0"
-									animate={{ scale: 1, opacity: 1 }}
-									exit={{ scale: 0, opacity: 0 }}
-								>
-									Copiado!
-								</motion.span>
-							)}
-							<Button
-								className="mt-2"
-								onClick={() => {
-									copyResult(
-										`Joguei QSMP Conexões e consegui em ${tries} tentativas:
-										${result}
-										Para jogar acesse: qsmpconexoes.vercel.app`
-									);
-
-									setCopiedAlert(true);
-
-									setTimeout(() => {
-										setCopiedAlert(false);
-									}, 5000);
-								}}
-							>
-								Compartilhar
-							</Button>
-						</div>
-					</motion.div>
-				)}
-				<div className="flex justify-between">
-					<span className="text-bold">
-						{new Date().toLocaleString(undefined, {
-							day: "numeric",
-							month: "numeric",
-							year: "numeric",
-						})}
-					</span>
-					<span>
-						Tentativas:{" "}
-						<strong className="text-bold">{tries}</strong>
-					</span>
-				</div>
-				<div className="mt-4">
-					<div className="space-y-2">
-						{corrects.map((connection) => (
-							<motion.div
-								key={connection.name}
-								style={
-									{
-										"--color": connection.color,
-									} as React.CSSProperties
-								}
-								className="h-[50.38px] opacity-0 sm:h-[78.42px] flex flex-col items-center justify-center bg-[var(--color)] rounded-md"
-								animate={{ opacity: 1 }}
-							>
-								<span className="font-bold">
-									{connection.name}
+			{/* <pre>{JSON.stringify(memory[today], null, 2)}</pre> */}
+			{memory[today] && (
+				<main className="pt-8">
+					{status === "over" && (
+						<motion.div
+							animate={{ height: "auto" }}
+							className="mb-4 h-0 bg-muted rounded-md px-6 py-4 text-center"
+						>
+							<div className="text-center">
+								<span className="block text-lg font-bold">
+									Parabéns!
 								</span>
-								<p>{connection.items.join(", ")}</p>
-							</motion.div>
-						))}
+								<span>
+									Você conseguiu em {tries} tentativas.
+								</span>
+							</div>
+							<span className="mt-4 block">{result}</span>
+							<div className="mt-4">
+								{copiedAlert && (
+									<motion.span
+										className="block scale-0 opacity-0"
+										animate={{ scale: 1, opacity: 1 }}
+										exit={{ scale: 0, opacity: 0 }}
+									>
+										Copiado!
+									</motion.span>
+								)}
+								<Button
+									className="mt-2"
+									onClick={() => {
+										copyResult(
+											`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
+												""
+											)}\n\nPara jogar acesse: qsmpconexoes.vercel.app`
+										);
+
+										setCopiedAlert(true);
+
+										setTimeout(() => {
+											setCopiedAlert(false);
+										}, 5000);
+									}}
+								>
+									Compartilhar
+								</Button>
+							</div>
+						</motion.div>
+					)}
+					<div className="flex justify-between">
+						<span className="text-bold">
+							{new Date().toLocaleString(undefined, {
+								day: "numeric",
+								month: "numeric",
+								year: "numeric",
+							})}
+						</span>
+						<span>
+							Tentativas:{" "}
+							<strong className="text-bold">{tries}</strong>
+						</span>
 					</div>
-					<ToggleGroup.Root
-						type="multiple"
-						className="grid grid-cols-4 gap-2 mt-2"
-						value={selected}
-						onValueChange={(newSelected) => {
-							if (status !== "waiting") return;
+					<div className="mt-4">
+						<div className="space-y-2">
+							{corrects.map((connection) => (
+								<motion.div
+									key={connection.name}
+									style={
+										{
+											"--color": connection.color,
+										} as React.CSSProperties
+									}
+									className="h-[50.38px] opacity-0 sm:h-[78.42px] flex flex-col items-center justify-center bg-[var(--color)] rounded-md"
+									animate={{ opacity: 1 }}
+								>
+									<span className="font-bold">
+										{connection.name}
+									</span>
+									<p>{connection.items.join(", ")}</p>
+								</motion.div>
+							))}
+						</div>
+						<ToggleGroup.Root
+							type="multiple"
+							className="grid grid-cols-4 gap-2 mt-2"
+							value={selected}
+							onValueChange={(newSelected) => {
+								if (status !== "waiting") return;
 
-							setSelected(newSelected);
+								setSelected(newSelected);
 
-							if (newSelected.length === 4)
-								selectFourHandler(newSelected);
-						}}
-					>
-						{connections
-							.map((connection) => connection.items)
-							.flat()
-							.map((item) => (
+								if (newSelected.length === 4)
+									selectFourHandler(newSelected);
+							}}
+						>
+							{shuffledConnections.map((item) => (
 								<Button key={item} asChild variant="ghost">
 									<ToggleGroup.Item
 										value={item}
@@ -230,16 +262,22 @@ export default function Game() {
 											sm:text-base
 											hover:text-foreground
 											aspect-[112/72]
-											data-[correct=true]:bg-[var(--color)]
+											data-[correct=true]:!bg-[var(--color)]
 										"
 									>
 										{item}
 									</ToggleGroup.Item>
 								</Button>
 							))}
-					</ToggleGroup.Root>
-				</div>
-			</main>
+						</ToggleGroup.Root>
+					</div>
+				</main>
+			)}
+			{!memory[today] && (
+				<main className="flex items-center justify-center py-12">
+					<Loader2 size="1.5rem" className="animate-spin" />
+				</main>
+			)}
 		</div>
 	);
 }
