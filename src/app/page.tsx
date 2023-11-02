@@ -245,6 +245,7 @@ export default function Game() {
 											hover:text-foreground
 											aspect-[112/72]
 											data-[correct=true]:!bg-[var(--color)]
+											text-balance
 										"
 									>
 										{item}
