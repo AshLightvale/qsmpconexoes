@@ -242,6 +242,8 @@ export default function Game() {
 											bg-muted/30
 											text-xs
 											sm:text-base
+											hover:bg-muted/30
+											hover:sm:bg-accent
 											hover:text-foreground
 											aspect-[112/72]
 											data-[correct=true]:!bg-[var(--color)]
