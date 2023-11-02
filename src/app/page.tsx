@@ -10,6 +10,7 @@ import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
 import { shuffle } from "@/utils/shuffle";
 import { ALL_CONNECTIONS } from "@/data/connections";
 import { InfoDialog } from "@/components/info-dialog";
+import Image from "next/image";
 
 type Connection = {
 	name?: string;
@@ -117,46 +118,80 @@ export default function Game() {
 					{status === "over" && (
 						<motion.div
 							animate={{ height: "auto" }}
-							className="mb-4 h-0 bg-muted rounded-md px-6 py-4 text-center"
+							className="h-0 mb-4"
+							transition={{ type: "spring" }}
 						>
-							<div className="text-center">
-								<span className="block text-lg font-bold">
-									Parabéns!
+							<div className="mb-3 bg-muted rounded-md px-6 py-4 text-center">
+								<div className="text-center">
+									<span className="block text-lg font-bold">
+										Parabéns!
+									</span>
+									<span>
+										Você conseguiu em {tries} tentativas.
+									</span>
+								</div>
+								<span className="mt-4 block break-words">
+									{result}
 								</span>
-								<span>
-									Você conseguiu em {tries} tentativas.
-								</span>
-							</div>
-							<span className="mt-4 block break-words">
-								{result}
-							</span>
-							<div className="mt-4">
-								{copiedAlert && (
-									<motion.span
-										className="block scale-0 opacity-0"
-										animate={{ scale: 1, opacity: 1 }}
-										exit={{ scale: 0, opacity: 0 }}
+								<div className="mt-4">
+									{copiedAlert && (
+										<motion.span
+											className="block scale-0 opacity-0"
+											animate={{ scale: 1, opacity: 1 }}
+											exit={{ scale: 0, opacity: 0 }}
+										>
+											Copiado!
+										</motion.span>
+									)}
+									<Button
+										className="mt-2"
+										onClick={() => {
+											copyResult(
+												`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
+													""
+												)}\n\nPara jogar também acesse: qsmpconexoes.vercel.app`
+											);
+
+											setCopiedAlert(true);
+
+											setTimeout(() => {
+												setCopiedAlert(false);
+											}, 5000);
+										}}
 									>
-										Copiado!
-									</motion.span>
-								)}
+										Compartilhar
+									</Button>
+								</div>
+							</div>
+							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
+								<p className="text-balance">
+									Gosta de assistir varios POV do QSMP?
+									Experimente o MultiQSMP:
+								</p>
 								<Button
-									className="mt-2"
-									onClick={() => {
-										copyResult(
-											`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
-												""
-											)}\n\nPara jogar também acesse: qsmpconexoes.vercel.app`
-										);
-
-										setCopiedAlert(true);
-
-										setTimeout(() => {
-											setCopiedAlert(false);
-										}, 5000);
-									}}
+									variant="outline"
+									className="h-auto flex gap-2 bg-transparent border-primary/10 hover:bg-primary/10"
+									asChild
 								>
-									Compartilhar
+									<Link
+										href="https://multiqsmp.vercel.app"
+										target="_blank"
+									>
+										<Image
+											src="/multiqsmp-logo.svg"
+											alt="Logo do MultiQSMP"
+											width={32}
+											height={32}
+										/>
+										<div className="text-left">
+											<span className="block">
+												MultiQSMP
+											</span>
+											<span className="text-sm text-muted-foreground">
+												multiqsmp.vercel.app
+											</span>
+										</div>
+									</Link>
 								</Button>
 							</div>
 						</motion.div>
