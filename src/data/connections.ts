@@ -43,20 +43,20 @@ export const ALL_CONNECTIONS: {
 	],
 	"3112023": [
 		{
-			name: "Relacionados ao Foolish",
-			items: ["Titã", "Veggeta", "Castelo do Cellbit", "Roier"],
+			name: "Causa da morte de ovos",
+			items: ["Códigos", "Baleia", "Slimecicle", "Minas"],
 		},
 		{
-			name: "Relacionados aos Ovos",
-			items: ["Maçã", "Tumulos", "Códigos", "Camisa do Brasil"],
+			name: "Membros da Federação",
+			items: ["Cucurucho", "Forever", "Fit", "Kameto"],
 		},
 		{
-			name: "Items do Cucurucho",
-			items: ["Livro", "Pistola", "Luneta", "Serra Eletrica"],
+			name: "The Jaidens",
+			items: ["Cellbit", "Foolish", "BadBoyHalo", "Jaiden"],
 		},
 		{
-			name: "Mortos na eleição",
-			items: ["Baghera", "ElQuackity", "Gegg", "Cellbit"],
+			name: "Pintados por Romero Richas",
+			items: ["Richarlyson", "Dapper", "Philza", "Gogh"],
 		},
 	],
 };
