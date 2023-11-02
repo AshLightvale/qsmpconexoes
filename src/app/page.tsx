@@ -237,13 +237,11 @@ export default function Game() {
 											data-[wrong=true]:bg-muted/30
 											data-[wrong=true]:border-2
 											data-[correct=true]:animate-tada
-											data-[state=on]:!bg-[#8765c3]
+											data-[state=on]:bg-[#8765c3]
 											h-auto
 											bg-muted/30
 											text-xs
 											sm:text-base
-											hover:bg-muted/30
-											hover:sm:bg-accent
 											hover:text-foreground
 											aspect-[112/72]
 											data-[correct=true]:!bg-[var(--color)]
