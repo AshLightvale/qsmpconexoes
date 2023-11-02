@@ -237,7 +237,7 @@ export default function Game() {
 											data-[wrong=true]:bg-muted/30
 											data-[wrong=true]:border-2
 											data-[correct=true]:animate-tada
-											data-[state=on]:bg-[#8765c3]
+											data-[state=on]:!bg-[#8765c3]
 											h-auto
 											bg-muted/30
 											text-xs
