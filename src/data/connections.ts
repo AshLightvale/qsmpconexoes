@@ -25,38 +25,38 @@ export const ALL_CONNECTIONS: {
 	],
 	"2112023": [
 		{
-			name: "Cubitos Verdes",
-			items: ["German", "Mike", "Slime", "Willyrex"],
+			name: "Relacionados ao Foolish",
+			items: ["Titã", "Veggeta", "Castelo do Cellbit", "Roier"],
 		},
 		{
-			name: "Teve cabelo cortado",
-			items: ["Etoiles", "Baghera", "Pac", "Walter Bob"],
+			name: "Relacionados aos Ovos",
+			items: ["Maçã", "Tumulos", "Códigos", "Camisa do Brasil"],
 		},
 		{
-			name: "____ + Roier",
-			items: ["Chef", "Fotógrafo", "Cunhado", "Furry"],
+			name: "Items do Cucurucho",
+			items: ["Livro", "Pistola", "Luneta", "Serra Eletrica"],
 		},
 		{
-			name: "Trabalhos de Richarlyson",
-			items: ["Doutor", "Pintor", "Guitarrista", "Cupido"],
+			name: "Mortos na eleição",
+			items: ["Baghera", "ElQuackity", "Gegg", "Cellbit"],
 		},
 	],
 	"3112023": [
 		{
-			name: "QWQWQWQWQ",
-			items: ["1", "6", "8", "9"],
+			name: "Relacionados ao Foolish",
+			items: ["Titã", "Veggeta", "Castelo do Cellbit", "Roier"],
 		},
 		{
-			name: "ERERRERE",
-			items: ["F", "N", "Y", "A"],
+			name: "Relacionados aos Ovos",
+			items: ["Maçã", "Tumulos", "Códigos", "Camisa do Brasil"],
 		},
 		{
-			name: "TTYYTYTYT",
-			items: ["#", "%", "&", "@"],
+			name: "Items do Cucurucho",
+			items: ["Livro", "Pistola", "Luneta", "Serra Eletrica"],
 		},
 		{
-			name: "UIUIIUIUI",
-			items: ["!", ".", "?", ","],
+			name: "Mortos na eleição",
+			items: ["Baghera", "ElQuackity", "Gegg", "Cellbit"],
 		},
 	],
 };

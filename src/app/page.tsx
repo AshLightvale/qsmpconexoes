@@ -3,37 +3,19 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
-import { ArrowLeft, RotateCw, Loader2 } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
 import { shuffle } from "@/utils/shuffle";
 import { ALL_CONNECTIONS } from "@/data/connections";
+import { InfoDialog } from "@/components/info-dialog";
 
 type Connection = {
 	name?: string;
 	color?: string;
 	items: string[];
 };
-
-// const CONNECTIONS = [
-// 	{
-// 		name: "Números",
-// 		items: ["1", "6", "8", "9"],
-// 	},
-// 	{
-// 		name: "Letras",
-// 		items: ["F", "N", "Y", "A"],
-// 	},
-// 	{
-// 		name: "Símbolos",
-// 		items: ["#", "%", "&", "@"],
-// 	},
-// 	{
-// 		name: "Pontuação",
-// 		items: ["!", ".", "?", ","],
-// 	},
-// ];
 
 const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
 
@@ -127,9 +109,7 @@ export default function Game() {
 					</Link>
 				</Button>
 				<h1 className="text-xl font-bold">QSMP Conexões</h1>
-				<Button className="opacity-0 pointer-events-none" variant="ghost" size="icon">
-					<RotateCw size="1.25rem" />
-				</Button>
+				<InfoDialog />
 			</header>
 			{/* <pre>{JSON.stringify(memory[today], null, 2)}</pre> */}
 			{memory[today] && (
@@ -147,7 +127,9 @@ export default function Game() {
 									Você conseguiu em {tries} tentativas.
 								</span>
 							</div>
-							<span className="mt-4 block">{result}</span>
+							<span className="mt-4 block break-words">
+								{result}
+							</span>
 							<div className="mt-4">
 								{copiedAlert && (
 									<motion.span
@@ -181,7 +163,7 @@ export default function Game() {
 					)}
 					<div className="flex justify-between">
 						<span className="text-bold">
-							{new Date().toLocaleString(undefined, {
+							{new Date().toLocaleString("pt-BR", {
 								day: "numeric",
 								month: "numeric",
 								year: "numeric",
@@ -202,7 +184,7 @@ export default function Game() {
 											"--color": connection.color,
 										} as React.CSSProperties
 									}
-									className="h-[50.38px] opacity-0 sm:h-[78.42px] flex flex-col items-center justify-center bg-[var(--color)] rounded-md"
+									className="h-[50.38px] opacity-0 sm:h-[78.42px] text-xs sm:text-base flex flex-col items-center justify-center bg-[var(--color)] rounded-md"
 									animate={{ opacity: 1 }}
 								>
 									<span className="font-bold">
