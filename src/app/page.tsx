@@ -246,6 +246,7 @@ export default function Game() {
 											aspect-[112/72]
 											data-[correct=true]:!bg-[var(--color)]
 											text-balance
+											no-select
 										"
 									>
 										{item}
