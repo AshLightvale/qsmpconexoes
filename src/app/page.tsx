@@ -241,6 +241,8 @@ export default function Game() {
 											h-auto
 											bg-muted/30
 											text-xs
+											hover:max-sm:data-[state=on]:data-[correct=false]:data-[wrong=false]:bg-[#8765c3]
+											hover:max-sm:bg-muted/30
 											sm:text-base
 											hover:text-foreground
 											aspect-[112/72]

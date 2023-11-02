@@ -152,6 +152,10 @@
 		text-wrap: balance;
 	}
 
+	.bg-unset {
+		background-color: unset;
+	}
+
 	.no-select {
 		-webkit-tap-highlight-color: transparent;
 		-webkit-touch-callout: none;
