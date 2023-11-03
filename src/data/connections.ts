@@ -59,4 +59,40 @@ export const ALL_CONNECTIONS: {
 			items: ["Richarlyson", "Dapper", "Philza", "Gogh"],
 		},
 	],
+	"4112023": [
+		{
+			name: "RadioEggs",
+			items: ["Pomme", "Richarlyson", "Chayanne", "Leonarda"],
+		},
+		{
+			name: "Ovos Mortos",
+			items: ["Bobby", "JuanaFlippa", "Tilín", "Trump"],
+		},
+		{
+			name: 'Ovos "nãos convencionais"',
+			items: ["Gegg", "Biden", "Egg A1", "Ovo abandonado"],
+		},
+		{
+			name: "Pais solteiros (um não entra)",
+			items: ["Dapper", "Rámon", "Talullah", "Roier"],
+		},
+	],
+	"5112023": [
+		{
+			name: "Tinham acesso a SOFIA",
+			items: ["Maximus", "BadBoyHalo", "Dapper", "Cellbit"],
+		},
+		{
+			name: "Personagens secundarios de criadores",
+			items: ["Hombre Misterioso", "Abueloier", "Arin", "Biden"],
+		},
+		{
+			name: '"Lendas" do QSMP',
+			items: ["DanTDM", "Wilbur Soot", "Kameto", "Gustavo Lima"],
+		},
+		{
+			name: "Fugiram da prisão",
+			items: ["Pac", "Mike", "Slimecicle", "ElMariana"],
+		},
+	],
 };
