@@ -91,7 +91,7 @@ export const ALL_CONNECTIONS: {
 			items: ["DanTDM", "Wilbur Soot", "Kameto", "Gustavo Lima"],
 		},
 		{
-			name: "Fugiram da prisão",
+			name: "Fugiram de uma prisão na ilha",
 			items: ["Pac", "Mike", "Slimecicle", "ElMariana"],
 		},
 	],
