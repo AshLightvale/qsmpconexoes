@@ -93,7 +93,7 @@ export default function Game() {
 	}
 
 	useEffect(() => {
-                if ((memory[today] || []).find(a => a.includes("Radio"))) {
+                if ((memory[today] || []).find(a => a.namd.includes("Radio"))) {
 			setMemory((old) => ({ ...old, "4112023": {} }));
 		}
 		
