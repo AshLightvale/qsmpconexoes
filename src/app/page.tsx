@@ -21,7 +21,7 @@ type Connection = {
 const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
 
 export default function Game() {
-	const [selected, setSelected] = useState<string[]>([);
+	const [selected, setSelected] = useState<string[]>([]);
 
 	const [_, copyResult] = useCopyToClipboard();
 	const [copiedAlert, setCopiedAlert] = useState(false);
