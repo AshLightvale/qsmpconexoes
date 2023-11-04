@@ -74,7 +74,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Pais solteiros (um não entra)",
-			items: ["Dapper", "Rámon", "Talullah", "Roier"],
+			items: ["Dapper", "Rámon", "Tallulah", "Roier"],
 		},
 	],
 	"5112023": [
