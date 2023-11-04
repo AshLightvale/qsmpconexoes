@@ -97,7 +97,7 @@ export default function Game() {
 	}, [attempts, setMemory, today]);
 
 	return (
-		<div className="max-w-[512px] w-[90%] my-12">
+		<div className="max-w-[512px] w-[90%] my-12 flex flex-col items-center">
 			<header className="flex justify-between items-center w-full">
 				<Button
 					variant="ghost"
@@ -299,6 +299,7 @@ export default function Game() {
 					<Loader2 size="1.5rem" className="animate-spin" />
 				</main>
 			)}
+     <p className="block mt-3 text-sm">Informações tiradas da wiki.</p>
 		</div>
 	);
 }
