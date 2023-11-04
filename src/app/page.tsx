@@ -304,7 +304,7 @@ export default function Game() {
 					<Loader2 size="1.5rem" className="animate-spin" />
 				</main>
 			)}
-     <p className="block mt-3 text-sm">Informações tiradas da wiki.</p>
+    		<p className="block mt-auto text-sm text-muted-foreground">Informações tiradas da wiki.</p>
 		</div>
 	);
 }
