@@ -61,8 +61,8 @@ export const ALL_CONNECTIONS: {
 	],
 	"4112023": [
 		{
-			name: "RadioEggs",
-			items: ["Pomme", "Richarlyson", "Chayanne", "Leonarda"],
+			name: "Filhos vivos de pais solteiros",
+			items: ["Chayanne", "Dapper", "Rámon", "Leonarda"],
 		},
 		{
 			name: "Ovos Mortos",
@@ -73,8 +73,8 @@ export const ALL_CONNECTIONS: {
 			items: ["Gegg", "Biden", "Egg A1", "Ovo abandonado"],
 		},
 		{
-			name: "Pais solteiros (um não entra)",
-			items: ["Dapper", "Rámon", "Tallulah", "Roier"],
+			name: "Adotados futuramente",
+			items: ["Pomme", "Richarlyson", "Tallulah", "Ju4n4Fl1pp4"],
 		},
 	],
 	"5112023": [
