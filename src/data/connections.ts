@@ -61,7 +61,7 @@ export const ALL_CONNECTIONS: {
 	],
 	"4112023": [
 		{
-			name: "Filhos vivos de pais solteiros",
+			name: "Ovos iniciais ainda vivos",
 			items: ["Chayanne", "Dapper", "Rámon", "Leonarda"],
 		},
 		{
