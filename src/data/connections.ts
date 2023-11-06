@@ -95,4 +95,22 @@ export const ALL_CONNECTIONS: {
 			items: ["Pac", "Mike", "Slimecicle", "ElMariana"],
 		},
 	],
+	"6112023": [
+		{
+			name: "Advogados de Slimecicle",
+			items: ["FitMC", "Foolish", "Jaiden", "Quackity"],
+		},
+		{
+			name: "Afinidade com Morte",
+			items: ["Dapper", "ElQuackity", "Chayanne", "Philza"],
+		},
+		{
+			name: "Cubitos relacionados aos codigos",
+			items: ["Luzu", "Max", "Slimecicle", "Etoiles"],
+		},
+		{
+			name: "Moram em castelos",
+			items: ["Baghera", "Cellbit", "Roier", "Pierre"],
+		},
+	],
 };
