@@ -113,4 +113,22 @@ export const ALL_CONNECTIONS: {
 			items: ["Baghera", "Cellbit", "Roier", "Pierre"],
 		},
 	],
+		"7112023": [
+		{
+			name: "Mortos por Códigos",
+			items: ["Cellbit", "Max", "Tallulah", "Bobby"],
+		},
+		{
+			name: "Feito por brasileiros",
+			items: ["Quadrado", "Favela", "Copacabana", "Chume Labs"],
+		},
+		{
+			name: "Pais da Pomme",
+			items: ["Etoiles", "Antoine", "BadBoyHalo", "Pierre"],
+		},
+		{
+			name: 'Tem outras "identidades"',
+			items: ["Luzu", "Rubius", "Richarlyson", "Pomme"],
+		},
+	]
 };
