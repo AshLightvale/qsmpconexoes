@@ -113,7 +113,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Baghera", "Cellbit", "Roier", "Pierre"],
 		},
 	],
-		"7112023": [
+	"7112023": [
 		{
 			name: "Mortos por Códigos",
 			items: ["Cellbit", "Max", "Tallulah", "Bobby"],
@@ -130,5 +130,44 @@ export const ALL_CONNECTIONS: {
 			name: 'Tem outras "identidades"',
 			items: ["Luzu", "Rubius", "Richarlyson", "Pomme"],
 		},
-	]
+	],
+	"8112023": [
+		{
+			name: "Lideres/Criadores de grupos",
+			items: ["Cellbit", "Foolish", "Pato", "TazerCraft"],
+		},
+		{
+			name: "Hispânicos que fugiram da prisão",
+			items: ["Rivers", "Polispol", "Carre", "German"],
+		},
+		{
+			name: "Candidatos da eleição que nunca morreram",
+			items: ["BadBoyHalo", "Felps", "Forever", "Mike"],
+		},
+		{
+			name: "Pais de ovos mortos",
+			items: ["Roier", "Jaiden", "Maxo", "Quackity"],
+		},
+	],
 };
+
+/*
+[
+	{
+		name: "",
+		items: ["", "", "", ""],
+	},
+	{
+		name: "",
+		items: ["", "", "", ""],
+	},
+	{
+		name: "",
+		items: ["", "", "", ""],
+	},
+	{
+		name: "",
+		items: ["", "", "", ""],
+	},
+]
+*/
