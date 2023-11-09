@@ -138,9 +138,9 @@ export default function Game() {
 										Parabéns!
 									</span>
 									<span>
-										Você conseguiu em 
+										"Você conseguiu em "
 										<b>{tries}</b> 
-										 tentativas.
+										" tentativas."
 									</span>
 								</div>
 								<span className="mt-4 block break-words">
