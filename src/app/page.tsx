@@ -11,6 +11,12 @@ import { shuffle } from "@/utils/shuffle";
 import { ALL_CONNECTIONS } from "@/data/connections";
 import { InfoDialog } from "@/components/info-dialog";
 import Image from "next/image";
+import {
+	Dialog,
+	DialogContent,
+	DialogHeader,
+	DialogTitle,
+} from "@/components/ui/dialog";
 
 type Connection = {
 	name?: string;
@@ -20,6 +26,11 @@ type Connection = {
 
 const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
 
+const day = [
+	1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1,
+	2, 3, 4, 5, 6, 7,
+];
+
 export default function Game() {
 	const [selected, setSelected] = useState<string[]>([]);
 
@@ -27,7 +38,7 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const today = "" + now.getDate() + (now.getMonth() + 1) + now.getFullYear();
+	const today = day[now.getDate() - 1] + "112023";
 
 	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
 
@@ -93,16 +104,50 @@ export default function Game() {
 	}
 
 	useEffect(() => {
-                if ((memory[today] || []).find(a => a.name ? (a.name.includes("Radio") || a.name.includes("Filhos vivos")) : false)) {
-			setAttempts([])
-			setMemory((old) => ({ ...old, "4112023": [] }));
-		}
-		
 		setMemory((old) => ({ ...old, [today]: attempts }));
 	}, [attempts, setMemory, today]);
 
 	return (
 		<div className="max-w-[512px] w-[90%] my-12 flex flex-col items-center">
+			<Dialog defaultOpen>
+				<DialogContent>
+					<DialogHeader>
+						<DialogTitle>Fim</DialogTitle>
+						<main className="space-y-2">
+							<p>Oie, aqui é a Feyli, criadora do site.</p>
+							<p>
+								Depois de 8 dias, hoje eu encerro o QSMP
+								Conexões. Eu não irei mais manter ele com a
+								intenção de focar em outros projetos (pessoais e
+								não pessoais). Além do fato da minha falta de
+								criatividade.
+							</p>
+							<p>
+								Se você quiser jogar ainda, os 8 dias irão ficar
+								repetindo (pra sempre).
+							</p>
+							<p>
+								E se você é programador e se interessar em
+								manter o QSMP Conexões por conta própria,
+								sinta-se completamente livre para fazer um fork
+								do{" "}
+								<Link
+									href="https://github.com/feeeyli/qsmpconnections"
+									target="_blank"
+									className="text-primary hover:underline"
+								>
+									repositório do site
+								</Link>
+								.
+							</p>
+							<p>
+								Enfim, obrigado por todo o apoio ao meu
+								projetinho. :D
+							</p>
+						</main>
+					</DialogHeader>
+				</DialogContent>
+			</Dialog>
 			<header className="flex justify-between items-center w-full">
 				<Button
 					variant="ghost"
@@ -304,7 +349,9 @@ export default function Game() {
 					<Loader2 size="1.5rem" className="animate-spin" />
 				</main>
 			)}
-    		<p className="block mt-auto text-sm text-muted-foreground">Informações tiradas da wiki.</p>
+			<p className="block mt-auto text-sm text-muted-foreground">
+				Informações tiradas da wiki.
+			</p>
 		</div>
 	);
 }
