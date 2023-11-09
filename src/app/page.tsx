@@ -109,45 +109,6 @@ export default function Game() {
 
 	return (
 		<div className="max-w-[512px] w-[90%] my-12 flex flex-col items-center">
-			<Dialog defaultOpen>
-				<DialogContent>
-					<DialogHeader>
-						<DialogTitle>Fim</DialogTitle>
-						<main className="space-y-2">
-							<p>Oie, aqui é a Feyli, criadora do site.</p>
-							<p>
-								Depois de 8 dias, hoje eu encerro o QSMP
-								Conexões. Eu não irei mais manter ele com a
-								intenção de focar em outros projetos (pessoais e
-								não pessoais). Além do fato da minha falta de
-								criatividade.
-							</p>
-							<p>
-								Se você quiser jogar ainda, os 8 dias irão ficar
-								repetindo (pra sempre).
-							</p>
-							<p>
-								E se você é programador e se interessar em
-								manter o QSMP Conexões por conta própria,
-								sinta-se completamente livre para fazer um fork
-								do{" "}
-								<Link
-									href="https://github.com/feeeyli/qsmpconnections"
-									target="_blank"
-									className="text-primary hover:underline"
-								>
-									repositório do site
-								</Link>
-								.
-							</p>
-							<p>
-								Enfim, obrigado por todo o apoio ao meu
-								projetinho. :D
-							</p>
-						</main>
-					</DialogHeader>
-				</DialogContent>
-			</Dialog>
 			<header className="flex justify-between items-center w-full">
 				<Button
 					variant="ghost"
