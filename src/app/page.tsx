@@ -207,6 +207,37 @@ export default function Game() {
 									</Link>
 								</Button>
 							</div>
+							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
+								<p className="text-balance">
+									Gosta de assistir varios POV do QSMP?
+									Experimente o MultiQSMP:
+								</p>
+								<Button
+									variant="outline"
+									className="h-auto flex gap-2 bg-transparent border-primary/10 hover:bg-primary/10"
+									asChild
+								>
+									<Link
+										href="https://multiqsmp.vercel.app"
+										target="_blank"
+									>
+										<Image
+											src="/multiqsmp-logo.svg"
+											alt="Logo do MultiQSMP"
+											width={32}
+											height={32}
+										/>
+										<div className="text-left">
+											<span className="block">
+												MultiQSMP
+											</span>
+											<span className="text-sm text-muted-foreground">
+												multiqsmp.vercel.app
+											</span>
+										</div>
+									</Link>
+								</Button>
+							</div>
 						</motion.div>
 					)}
 					<div className="flex justify-between">
