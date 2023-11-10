@@ -62,6 +62,8 @@ export const InfoDialog = () => {
 						>
 							Feyli
 						</Link></span>
+					</p>
+					<p className="text-sm [text-wrap:balance]">
 						<span>Sendo atualizado por{" "}
 						<Link
 							href="https://twitter.com/AshLightvale"
@@ -70,7 +72,8 @@ export const InfoDialog = () => {
 						>
 							AshLightvale
 						</Link></span>
-
+					</p>
+					<p className="text-sm [text-wrap:balance]">
 						<span>Feito com{" "}
 						<Heart
 							size="1rem"
