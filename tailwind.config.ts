@@ -47,7 +47,7 @@ module.exports = {
 					foreground: "hsl(var(--popover-foreground))",
 				},
 				card: {
-					DEFAULT: "hsl(211, 50%, 46%)", // --118, 34%, 21% --card
+					DEFAULT: "hsl(118, 16%, 31%)", // --118, 34%, 21% --card
 					foreground: "hsl(var(--card-foreground))",
 				},
 			},
