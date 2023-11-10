@@ -39,8 +39,8 @@ module.exports = {
 					foreground: "hsl(var(--muted-foreground))",
 				},
 				accent: {
-					DEFAULT: "hsl(118, 32%, 21%)", // Cartas/Opções
-					foreground: "hsl(var(--accent-foreground))",
+					DEFAULT: "hsl(118, 32%, 21%)", // Cartas/Opções: Selecionado
+					foreground: "hsl(118, 16%, 31%)", // Cartas/Opções: Não-Selecionado
 				},
 				popover: {
 					DEFAULT: "hsl(118, 34%, 21%)",
