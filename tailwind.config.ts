@@ -18,9 +18,9 @@ module.exports = {
 		extend: {
 			colors: {
 				border: "hsl(var(--border))", // Border: hsl(118, 11%, 21%)
-				input: "hsl(211, 50%, 46%)",
-				ring: "hsl(118, 14%, 21%)",
-				background: "hsl(118, 16%, 21%)", // Fundo Principal: hsl(118, 16%, 21%)
+				input: "hsl(var(--input))",
+				ring: "hsl(var(--ring))",
+				background: "hsl(var(--background))", // Fundo Principal: hsl(118, 16%, 21%)
 				foreground: "hsl(var(--foreground))",
 				primary: {
 					DEFAULT: "hsl(var(--primary))", // Texto cor Primaria
