@@ -20,7 +20,7 @@ module.exports = {
 				border: "hsl(var(--border))", // Border: hsl(118, 11%, 21%)
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
-				background: "hsl(265, 13%, 13%)", // Fundo Principal: hsl(118, 16%, 21%)
+				background: "hsl(265, 22%, 13%)", // Fundo Principal: hsl(118, 16%, 21%)
 				foreground: "hsl(var(--foreground))",
 				primary: {
 					DEFAULT: "hsl(var(--primary))", // Texto cor Primaria
