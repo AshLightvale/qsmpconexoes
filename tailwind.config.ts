@@ -17,10 +17,10 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				border: "hsl(118, 14%, 21%)", // Border: 118, 14%, 21%
-				input: "hsl(var(--input))",
+				border: "hsl(118, 11%, 21%)", // Border: hsl(118, 11%, 21%)
+				input: "hsl(211, 50%, 46%)",
 				ring: "hsl(118, 14%, 21%)",
-				background: "hsl(118, 20%, 21%)", // Fundo Principal: 118, 20%, 21%
+				background: "hsl(118, 16%, 21%)", // Fundo Principal: hsl(118, 16%, 21%)
 				foreground: "hsl(var(--foreground))",
 				primary: {
 					DEFAULT: "hsl(--primary)",
