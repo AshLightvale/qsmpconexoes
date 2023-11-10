@@ -176,7 +176,7 @@ export default function Game() {
 									</Button>
 								</div>
 							</div>
-							<div className="mnb-3 bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
+							<div className="mb-3 bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
 								<p className="text-balance">
 									Gostou do QSMP Conexões?
 									Dê sugestões:
