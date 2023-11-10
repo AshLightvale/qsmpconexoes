@@ -187,21 +187,18 @@ export default function Game() {
 									asChild
 								>
 									<Link
-										href="https://multiqsmp.vercel.app"
+										href="https://forms.gle/Dvwm4osQZ25P8jMd9"
 										target="_blank"
 									>
 										<Image
 											src="/Google_Forum.svg"
 											alt="Logo do Google Forum"
-											width={32}
-											height={32}
+											width={24}
+											height={24}
 										/>
 										<div className="text-left">
 											<span className="block">
 												Feedback
-											</span>
-											<span className="text-sm text-muted-foreground">
-												forms.gle/Dvwm4osQZ25P8jMd9
 											</span>
 										</div>
 									</Link>
