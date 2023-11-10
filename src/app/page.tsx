@@ -200,6 +200,9 @@ export default function Game() {
 											<span className="block">
 												Feedback
 											</span>
+											<span className="text-sm text-muted-foreground">
+												forms.gle/Dvwm4osQZ25P8jMd9
+											</span>
 										</div>
 									</Link>
 								</Button>
