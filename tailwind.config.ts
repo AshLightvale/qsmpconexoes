@@ -31,7 +31,7 @@ module.exports = {
 					foreground: "hsl(var(--secondary-foreground))",
 				},
 				destructive: {
-					DEFAULT: "hsl(118, 32%, 21%)", // destructive
+					DEFAULT: "hsl(var(--destructive))", // destructive
 					foreground: "hsl(var(--destructive-foreground))",
 				},
 				muted: {
@@ -39,7 +39,7 @@ module.exports = {
 					foreground: "hsl(var(--muted-foreground))",
 				},
 				accent: {
-					DEFAULT: "hsl(211, 50%, 46%)", // accent
+					DEFAULT: "hsl(118, 32%, 21%)", // accent
 					foreground: "hsl(var(--accent-foreground))",
 				},
 				popover: {
