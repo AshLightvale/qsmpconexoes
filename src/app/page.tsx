@@ -29,7 +29,7 @@ const day = [
 	26, 27, 28, 29, 30, 31,
 ];
 
-const COLORS = ["#4d9e61", "#ffd83f", "#ff4267", "#374689"]; // ["#009d28", "#ff9a00", "#ff0133", "#001884"]
+const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"]; // ["#009d28", "#ff9a00", "#ff0133", "#001884"]
 export default function Game() {
 	const [selected, setSelected] = useState<string[]>([]);
 
