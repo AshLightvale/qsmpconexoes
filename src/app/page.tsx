@@ -162,7 +162,7 @@ export default function Game() {
 											copyResult(
 												`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
 													""
-												)}\n\nPara jogar também acesse: qsmpconexoes.vercel.app`
+												)}\n\nPara jogar também acesse: conexo-qsmp.vercel.app`
 											);
 
 											setCopiedAlert(true);
@@ -207,7 +207,7 @@ export default function Game() {
 									</Link>
 								</Button>
 							</div>
-							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
+							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-10">
 								<p className="text-balance">
 									Gosta de assistir varios POV do QSMP?
 									Experimente o MultiQSMP:
