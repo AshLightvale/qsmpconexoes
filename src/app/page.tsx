@@ -179,7 +179,7 @@ export default function Game() {
 							<div className="mnb-3 bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
 								<p className="text-balance">
 									Gostou do QSMP Conexões?
-									Deixe a sua opnião:
+									Dê sugestões:
 								</p>
 								<Button
 									variant="outline"
@@ -198,7 +198,7 @@ export default function Game() {
 										/>
 										<div className="text-left">
 											<span className="block">
-												Feedback
+												Forum de Sugestões:
 											</span>
 											<span className="text-sm text-muted-foreground">
 												forms.gle/Dvwm4osQZ25P8jMd9
