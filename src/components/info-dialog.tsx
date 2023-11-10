@@ -15,7 +15,7 @@ export const InfoDialog = () => {
 		<Dialog>
 			<DialogTrigger asChild>
 				<Button variant="ghost" size="icon">
-					<HelpCircle size="1.25rem" />
+					<HelpCircle size="1.5rem" />
 				</Button>
 			</DialogTrigger>
 			<DialogContent>
@@ -54,29 +54,29 @@ export const InfoDialog = () => {
 						</Link>
 					</p>
 					<p className="text-sm [text-wrap:balance]">
-						Programação e Site originalmente feito por{" "}
+						<span>Programação e Site originalmente feito por{" "}
 						<Link
 							href="https://twitter.com/feeeyli"
 							className="text-[#FFA4CF] underline"
 							target="_blank"
 						>
 							Feyli
-						</Link>
-						Sendo atualizado por{" "}
+						</Link></span>
+						<span>Sendo atualizado por{" "}
 						<Link
 							href="https://twitter.com/AshLightvale"
 							className="text-[#FFA4CF] underline"
 							target="_blank"
 						>
 							AshLightvale
-						</Link>
-						
-						Feito com{" "}
+						</Link></span>
+
+						<span>Feito com{" "}
 						<Heart
 							size="1rem"
 							className="inline mx-1 fill-[#FFA4CF] text-[#FFA4CF]"
 						/>{" "}
-						, para toda comunidade do QSMP!
+						, para toda comunidade do QSMP!</span>
 					</p>
 				</footer>
 			</DialogContent>
