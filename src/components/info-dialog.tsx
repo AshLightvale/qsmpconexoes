@@ -15,7 +15,7 @@ export const InfoDialog = () => {
 		<Dialog>
 			<DialogTrigger asChild>
 				<Button variant="ghost" size="icon">
-					<HelpCircle size="1.5rem" />
+					<HelpCircle size="1.75rem" />
 				</Button>
 			</DialogTrigger>
 			<DialogContent>
@@ -52,6 +52,7 @@ export const InfoDialog = () => {
 						>
 							CONEXÃO PARANORMAL
 						</Link>
+						
 					</p>
 					<p className="text-sm [text-wrap:balance]">
 						<span>Programação e Site originalmente feito por{" "}
