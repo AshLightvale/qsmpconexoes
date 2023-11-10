@@ -178,8 +178,8 @@ export default function Game() {
 							</div>
 							<div className="mnb-3 bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
 								<p className="text-balance">
-									Gosta de assistir varios POV do QSMP?
-									Experimente o MultiQSMP:
+									Gostou do QSMP Conexões?
+									Deixe a sua opnião:
 								</p>
 								<Button
 									variant="outline"
@@ -191,17 +191,17 @@ export default function Game() {
 										target="_blank"
 									>
 										<Image
-											src="/multiqsmp-logo.svg"
-											alt="Logo do MultiQSMP"
+											src="/Google_Forum.svg"
+											alt="Logo do Google Forum"
 											width={32}
 											height={32}
 										/>
 										<div className="text-left">
 											<span className="block">
-												MultiQSMP
+												Feedback
 											</span>
 											<span className="text-sm text-muted-foreground">
-												multiqsmp.vercel.app
+												forms.gle/Dvwm4osQZ25P8jMd9
 											</span>
 										</div>
 									</Link>
