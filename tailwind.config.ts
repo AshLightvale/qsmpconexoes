@@ -17,13 +17,13 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				border: "hsl(118, 11%, 21%)", // Border: hsl(118, 11%, 21%)
+				border: "hsl(var(--border))", // Border: hsl(118, 11%, 21%)
 				input: "hsl(211, 50%, 46%)",
 				ring: "hsl(118, 14%, 21%)",
 				background: "hsl(118, 16%, 21%)", // Fundo Principal: hsl(118, 16%, 21%)
 				foreground: "hsl(var(--foreground))",
 				primary: {
-					DEFAULT: "hsl(118, 27%, 30%)", // Texto cor Primaria
+					DEFAULT: "hsl(var(--primary))", // Texto cor Primaria
 					foreground: "hsl(var(--primary-foreground))",
 				},
 				secondary: {
@@ -35,12 +35,12 @@ module.exports = {
 					foreground: "hsl(var(--destructive-foreground))",
 				},
 				muted: {
-					DEFAULT: "hsl(118, 16%, 31%)", // Cartas/Opções: Não-Selecionado
+					DEFAULT: "hsl(var(--muted))", // Cartas/Opções: Não-Selecionado
 					foreground: "hsl(var(--muted-foreground))",
 				},
 				accent: {
-					DEFAULT: "hsl(118, 32%, 21%)", // Cartas/Opções: Selecionado
-					foreground: "hsl(118, 16%, 31%)",
+					DEFAULT: "hsl(var(--accent))", // Cartas/Opções: Selecionado
+					foreground: "hsl(var(--accent-foreground))",
 				},
 				popover: {
 					DEFAULT: "hsl(var(--popover))",
