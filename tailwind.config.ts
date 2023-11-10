@@ -20,7 +20,7 @@ module.exports = {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
-				background: "hsl(118, 22%, 21%)",
+				background: "hsl(118, 22%, 21%)", // Fundo Principal
 				foreground: "hsl(var(--foreground))",
 				primary: {
 					DEFAULT: "hsl(--primary)",
@@ -47,7 +47,7 @@ module.exports = {
 					foreground: "hsl(var(--popover-foreground))",
 				},
 				card: {
-					DEFAULT: "hsl(var(--card))",
+					DEFAULT: "hsl(hsl(118, 34%, 21%))",
 					foreground: "hsl(var(--card-foreground))",
 				},
 			},
