@@ -176,7 +176,7 @@ export default function Game() {
 									</Button>
 								</div>
 							</div>
-							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
+							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-10px">
 								<p className="text-balance">
 									Gosta de assistir varios POV do QSMP?
 									Experimente o MultiQSMP:
@@ -207,7 +207,7 @@ export default function Game() {
 									</Link>
 								</Button>
 							</div>
-							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-10">
+							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
 								<p className="text-balance">
 									Gosta de assistir varios POV do QSMP?
 									Experimente o MultiQSMP:
