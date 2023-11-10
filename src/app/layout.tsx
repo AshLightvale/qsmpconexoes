@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Conexo QSMP",
+	title: "QSMP Conexões",
 };
 
 export default function RootLayout({
