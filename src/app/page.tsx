@@ -24,6 +24,8 @@ type Connection = {
 	items: string[];
 };
 
+const day = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 }
+
 const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"];
 export default function Game() {
 	const [selected, setSelected] = useState<string[]>([]);
@@ -32,10 +34,9 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const day = now.getDate()
 	const month = now.getMonth()
 	const year = now.getFullYear()
-	const today = day.toString() + month.toString() + year.toString()
+	const today = day[now.getDate() - 1].toString() + month.toString() + year.toString()
 
 	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
 
