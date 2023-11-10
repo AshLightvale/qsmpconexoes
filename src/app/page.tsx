@@ -37,9 +37,10 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const month = now.getMonth()
+	const date = now.getDate()
+	const month = now.getMonth() + 1
 	const year = now.getFullYear()
-	const today = day[now.getDate() - 1].toString() + month.toString() + year.toString()
+	const today = date.toString() + month.toString() + year.toString()
 
 	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
 
