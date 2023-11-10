@@ -24,7 +24,7 @@ export const InfoDialog = () => {
 				</DialogHeader>
 				<main className="[&_strong]:font-normal [&_strong]:text-primary">
 					<p className="inline-block mb-2 indent-2">
-						Você deve formar grupos de <strong>4 palavras</strong>{" "}
+						Você deve formar grupos de <strong><b>4 palavras</b></strong>{" "}
 						que tenham ligação entre elas clicando nas palavras.
 					</p>
 					<p className="indent-2">
@@ -54,12 +54,7 @@ export const InfoDialog = () => {
 						</Link>
 					</p>
 					<p className="text-sm [text-wrap:balance]">
-						Feito com{" "}
-						<Heart
-							size="1rem"
-							className="inline mx-1 fill-[#FFA4CF] text-[#FFA4CF]"
-						/>{" "}
-						por{" "}
+						Programação e Site originalmente feito por{" "}
 						<Link
 							href="https://twitter.com/feeeyli"
 							className="text-[#FFA4CF] underline"
@@ -67,6 +62,20 @@ export const InfoDialog = () => {
 						>
 							Feyli
 						</Link>
+						Sendo atualizado por{" "}
+						<Link
+							href="https://twitter.com/AshLightvale"
+							className="text-[#FFA4CF] underline"
+							target="_blank"
+						>
+							AshLightvale
+						</Link>
+						
+						Feito com{" "}
+						<Heart
+							size="1rem"
+							className="inline mx-1 fill-[#FFA4CF] text-[#FFA4CF]"
+						/>{" "}
 						, para toda comunidade do QSMP!
 					</p>
 				</footer>
