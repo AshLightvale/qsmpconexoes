@@ -43,11 +43,11 @@ module.exports = {
 					foreground: "hsl(118, 16%, 31%)", // Cartas/Opções: Não-Selecionado
 				},
 				popover: {
-					DEFAULT: "hsl(118, 34%, 21%)",
+					DEFAULT: "hsl(118, 16%, 31%)",
 					foreground: "hsl(var(--popover-foreground))",
 				},
 				card: {
-					DEFAULT: "hsl(118, 16%, 31%)", // --118, 34%, 21% --card
+					DEFAULT: "hsl(var(--card))", // --118, 34%, 21% --card
 					foreground: "hsl(var(--card-foreground))",
 				},
 			},
