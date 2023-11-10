@@ -62,7 +62,7 @@ export const InfoDialog = () => {
 							target="_blank"
 						>
 							Feyli
-						</Link></span>
+						</Link>.</span>
 					</p>
 					<p className="text-sm [text-wrap:balance]">
 						<span>Sendo atualizado por{" "}
@@ -72,7 +72,7 @@ export const InfoDialog = () => {
 							target="_blank"
 						>
 							AshLightvale
-						</Link></span>
+						</Link>.</span>
 					</p>
 					<p className="text-sm [text-wrap:balance]">
 						<span>Feito com{" "}
