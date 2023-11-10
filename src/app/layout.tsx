@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "QSMP Conexões",
+	verification: {
+		google: "google814bb35cc5bc0b6e.html"
+	},
 };
 
 export default function RootLayout({
