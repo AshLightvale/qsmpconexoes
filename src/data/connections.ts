@@ -185,6 +185,42 @@ export const ALL_CONNECTIONS: {
 			items: ["Roier", "Jaiden", "Maxo", "Quackity"],
 		},
 	],
+	"11112023": [
+		{
+			name: "Afinidade com Energia",
+			items: ["Jaiden", "Mike", "Foolish", "Rivers"],
+		},
+		{
+			name: "Jogadores levados para o Nether",
+			items: ["Forever", "ElMariana", "Pac", "Etoiles"],
+		},
+		{
+			name: "Individuos que são demônios",
+			items: ["BadBoyHalo", "Ironmouse", "Tina", "O Demônio"],
+		},
+		{
+			name: "Morning Crew",
+			items: ["Fit", "Tubbo", "TazerCraft", "Philza"],
+		},
+	],
+	"12112023": [
+		{
+			name: "Afinidade com Energia",
+			items: ["Jaiden", "Mike", "Foolish", "Rivers"],
+		},
+		{
+			name: "Jogadores levados para o Nether",
+			items: ["Forever", "ElMariana", "Pac", "Etoiles"],
+		},
+		{
+			name: "Individuos que são demônios",
+			items: ["BadBoyHalo", "Ironmouse", "Tina", "O Demônio"],
+		},
+		{
+			name: "Morning Crew",
+			items: ["Fit", "Tubbo", "TazerCraft", "Philza"],
+		},
+	],
 };
 
 /*
