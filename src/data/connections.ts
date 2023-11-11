@@ -221,6 +221,42 @@ export const ALL_CONNECTIONS: {
 			items: ["Spreen", "Cucurucho", "Rubius", "Osito"],
 		},
 	],
+	"13112023": [
+		{
+			name: "Construções feitas pelo Foolish",
+			items: ["Castelo do Cellbit", "Estátua do Cucurucho", "Titã", "Dragão"],
+		},
+		{
+			name: "Construções feitas por Brasileiros",
+			items: ["N.I.N.H.O", "StarBobby", "Favela", "Barbearia do Ramón"],
+		},
+		{
+			name: "Nome de Bases",
+			items: ["Turbbo", "Mega Base", "Cabañobby", "Eggxile"],
+		},
+		{
+			name: "Construções feitas pelo Aypierre",
+			items: ["Aybased", "Cucurucrous", "Le Bone Castle", "Camp Furrest"],
+		},
+	],
+	"14112023": [
+		{
+			name: "Apelidos do Cellbit",
+			items: ["Mystery Boy", "Sr. Detetive", "Pinchecha", "Clóvis"],
+		},
+		{
+			name: "Apelidos do Foolish",
+			items: ["Grandma", "Bruce", "KELP", "Mario"],
+		},
+		{
+			name: "Apelidos do Quackity",
+			items: ["Honey", "Vagabundo", "Quackiris", "Mr.Smile"],
+		},
+		{
+			name: "Apelidos do Etoiles",
+			items: ["Tonton", "Bijou", "Mac", "Rayou"],
+		},
+	],
 };
 
 /*
