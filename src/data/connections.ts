@@ -205,20 +205,20 @@ export const ALL_CONNECTIONS: {
 	],
 	"12112023": [
 		{
-			name: "Afinidade com Energia",
-			items: ["Jaiden", "Mike", "Foolish", "Rivers"],
+			name: "Ovos vivos que foram impersonados pelos Códigos",
+			items: ["Richarlyson", "Tallulah", "Chayanne", "Pomme"],
 		},
 		{
-			name: "Jogadores levados para o Nether",
-			items: ["Forever", "ElMariana", "Pac", "Etoiles"],
+			name: "Jogadores com Skins baseadas em Animes",
+			items: ["Forever", "Kameto", "Philza", "Vegetta"],
 		},
 		{
-			name: "Individuos que são demônios",
-			items: ["BadBoyHalo", "Ironmouse", "Tina", "O Demônio"],
+			name: "Afinidade com Conhecimento",
+			items: ["Cellbit", "Ramon", "Aypierre", "Tubbo"],
 		},
 		{
-			name: "Morning Crew",
-			items: ["Fit", "Tubbo", "TazerCraft", "Philza"],
+			name: "Ursos",
+			items: ["Spreen", "Cucurucho", "Rubius", "Osito"],
 		},
 	],
 };
