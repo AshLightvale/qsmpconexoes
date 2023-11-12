@@ -162,7 +162,7 @@ export default function Game() {
 											copyResult(
 												`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
 													""
-												)}\n\nPara jogar também acesse: conexo-qsmp.vercel.app`
+												)}\n\nPara jogar também acesse: qsmp-conexoes.vercel.app`
 											);
 
 											setCopiedAlert(true);
