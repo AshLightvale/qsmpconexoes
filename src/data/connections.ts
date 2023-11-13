@@ -205,7 +205,7 @@ export const ALL_CONNECTIONS: {
 	],
 	"12112023": [
 		{
-			name: "Ovos vivos que foram impersonados pelos Códigos",
+			name: "Ovos vivos que foram impersonados por Códigos",
 			items: ["Richarlyson", "Tallulah", "Chayanne", "Pomme"],
 		},
 		{
@@ -255,6 +255,24 @@ export const ALL_CONNECTIONS: {
 		{
 			name: "Apelidos do Etoiles",
 			items: ["Tonton", "Bijou", "Mac", "Rayou"],
+		},
+	],
+	"15112023": [
+		{
+			name: "Companheiros de Trabalho do Foolish",
+			items: ["Special Agent 40", "Agent 18", "Agent 22", "Mr. 24"],
+		},
+		{
+			name: "Cargos da Federação",
+			items: ["Xerife", "Construtor", "Guarda", "Chefe"],
+		},
+		{
+			name: "Membros da Federação já 'Raptados'",
+			items: ["Ron", "Cellbit", "Walter Bob", "Fred"],
+		},
+		{
+			name: "Membros da Federação com Rank Desconhecido",
+			items: ["José", "Mr. Telescope", "Bubbles", "Cucurucho"],
 		},
 	],
 };
