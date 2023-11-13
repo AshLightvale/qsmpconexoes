@@ -311,6 +311,24 @@ export const ALL_CONNECTIONS: {
 			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
 		},
 	],
+	"18112023": [
+		{
+			name: "Jogadores que já fizeram Trens",
+			items: ["Tubbo", "Vegetta", "TazerCraft", "Forever"],
+		},
+		{
+			name: "Membros Anglófonos com ovos mortos",
+			items: ["Jaiden", "Slimecicle", "Quackity", "DanTDM"],
+		},
+		{
+			name: "Membros originais do Ordo Theoritas",
+			items: ["Cellbit", "Maximus", "Foolish", "BadBoyHalo"],
+		},
+		{
+			name: "Família do Philza",
+			items: ["Missa", "Wilbursoot", "Chayanne", "Tallulah"],
+		},
+	],
 };
 
 /*
