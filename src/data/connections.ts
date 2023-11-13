@@ -242,15 +242,15 @@ export const ALL_CONNECTIONS: {
 	"14112023": [
 		{
 			name: "Apelidos do Cellbit",
-			items: ["Mystery Boy", "Sr. Detetive", "Pinchecha", "Clóvis"],
+			items: ["Mystery Boy", "Sr. Detetive", "Gatinho", "Clóvis"],
 		},
 		{
 			name: "Apelidos do Foolish",
-			items: ["Grandma", "Bruce", "KELP", "Mario"],
+			items: ["Grandma", "Bruce", "KELP", "KOC"],
 		},
 		{
 			name: "Apelidos do Quackity",
-			items: ["Honey", "Vagabundo", "Quackiris", "Mr.Smile"],
+			items: ["Big Q", "Vagabundo", "Quackiris", "Mr.Smile"],
 		},
 		{
 			name: "Apelidos do Etoiles",
@@ -273,6 +273,43 @@ export const ALL_CONNECTIONS: {
 		{
 			name: "Membros da Federação com Rank Desconhecido",
 			items: ["José", "Mr. Telescope", "Bubbles", "Cucurucho"],
+		},
+	],
+	"16112023": [
+		{
+			name: "Nome de Pets de Leonarda",
+			items: ["Bonito", "Matt", "Carlos", "Rocco"],
+		},
+		{
+			name: "Nome de Pets de Dapper",
+			items: ["Bouncy", "Mocha", "Grim", "Perry"],
+		},
+		{
+			name: "Nome de Pets da Pomme",
+			items: ["Foxy", "Cocorico", "Cerise", "Speedy"],
+		},
+		{
+			name: "Nome de Pets do Chayanne",
+			items: ["Avocado", "Pheonix", "Alfonso II", "Rigby"],
+		},
+	],
+	"17112023": [
+		{
+			name: "Relacionados ao Tubbo",
+			items: ["Fred", "Soulfire", "Philza", "Tubbox"],
+		},
+		{
+			name: "Relacionados ao Arin",
+			items: ["Binário", "Luzu", "Maximus", "Azul"],
+		},
+		{
+			name: "Relacionados à Bagi",
+			items: ["Cellbit", "Tina", "Alexandre", "Zeno"],
+		},
+		{
+			name: "Relacionados à Jaiden",
+			items: ["Bobby", "Roier", "Cucurucho", "Bolas
+				],
 		},
 	],
 };
