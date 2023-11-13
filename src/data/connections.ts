@@ -241,20 +241,20 @@ export const ALL_CONNECTIONS: {
 	],
 	"14112023": [
 		{
-			name: "Apelidos do Cellbit",
-			items: ["Mystery Boy", "Sr. Detetive", "Gatinho", "Clóvis"],
+			name: "Tickets de 0001 a 0004",
+			items: ["Bagi", "Carre", "BadBoyHalo", "Aypierre"],
 		},
 		{
-			name: "Apelidos do Foolish",
-			items: ["Grandma", "Bruce", "KELP", "KOC"],
+			name: "Obteram Tickets rolando o número 7",
+			items: ["Felps", "Foolish", "Maximus", "Jaiden"],
 		},
 		{
-			name: "Apelidos do Quackity",
-			items: ["Big Q", "Vagabundo", "Quackiris", "Mr.Smile"],
+			name: "Tentaram obter o Ticket mais de uma vez",
+			items: ["Etoiles", "Ironmouse", "Antoine", "Roier"],
 		},
 		{
-			name: "Apelidos do Etoiles",
-			items: ["Tonton", "Bijou", "Mac", "Rayou"],
+			name: "Obteram o Ticket no mesmo dia",
+			items: ["Cellbit", "Forever", "Tubbo", "Pac"],
 		},
 	],
 	"15112023": [
