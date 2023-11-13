@@ -308,8 +308,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Relacionados à Jaiden",
-			items: ["Bobby", "Roier", "Cucurucho", "Bolas
-				],
+			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
 		},
 	],
 };
