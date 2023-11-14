@@ -300,7 +300,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Relacionados ao Arin",
-			items: ["Binário", "Luzu", "Maximus", "Azul"],
+			items: ["Binário", "Luzu", "Maximus", "Foolish"],
 		},
 		{
 			name: "Relacionados à Bagi",
