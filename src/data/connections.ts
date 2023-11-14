@@ -259,6 +259,24 @@ export const ALL_CONNECTIONS: {
 	],
 	"15112023": [
 		{
+			name: "Membros do time Bolas",
+			items: ["Molly", "Cellbit", "Philza", "Slimecicle"],
+		},
+		{
+			name: "'Little Budies' nomeados pelo Tubbo",
+			items: ["Rupert", "Caramel", "Bertie", "Scoob"],
+		},
+		{
+			name: "Nome de 'Little Budies'",
+			items: ["Mike Wazowski", "Trousers", "Luffy", "Coco"],
+		},
+		{
+			name: "Jogadores sem presença no Purgatorio",
+			items: ["Mike", "Rubius", "Wilbursoot", "German"],
+		},
+	],
+	"16112023": [
+		{
 			name: "Companheiros de Trabalho do Foolish",
 			items: ["Special Agent 40", "Agent 18", "Agent 22", "Mr. 24"],
 		},
@@ -275,7 +293,7 @@ export const ALL_CONNECTIONS: {
 			items: ["José", "Mr. Telescope", "Bubbles", "Cucurucho"],
 		},
 	],
-	"16112023": [
+	"17112023": [
 		{
 			name: "Nome de Pets de Leonarda",
 			items: ["Bonito", "Matt", "Carlos", "Rocco"],
@@ -293,7 +311,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Avocado", "Pheonix", "Alfonso II", "Rigby"],
 		},
 	],
-	"17112023": [
+	"18112023": [
 		{
 			name: "Relacionados ao Tubbo",
 			items: ["Fred", "Soulfire", "Philza", "Tubbox"],
@@ -311,7 +329,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
 		},
 	],
-	"18112023": [
+	"19112023": [
 		{
 			name: "Jogadores que já fizeram Trens",
 			items: ["Tubbo", "Vegetta", "TazerCraft", "Forever"],
