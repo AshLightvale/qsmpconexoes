@@ -267,8 +267,8 @@ export const ALL_CONNECTIONS: {
 			items: ["Rupert", "Caramel", "Bertie", "Scoob"],
 		},
 		{
-			name: "Nome de 'Little Budies'",
-			items: ["Mike Wazowski", "Trousers", "Luffy", "Coco"],
+			name: "Chegaram no Purgatório separadamente",
+			items: ["ElMariana", "Pac", "ElQuackity", "WB12"],
 		},
 		{
 			name: "Jogadores sem presença no Purgatorio",
