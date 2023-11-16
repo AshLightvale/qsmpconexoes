@@ -295,6 +295,42 @@ export const ALL_CONNECTIONS: {
 	],
 	"17112023": [
 		{
+			name: "Entidades sem rosto",
+			items: ["Observador", "Contratante", "Fred", "Jorgito"],
+		},
+		{
+			name: "Grupo de Entidades",
+			items: ["Ovos", "Binários", "Trabalhadores", "Capivaras"],
+		},
+		{
+			name: "Relacionado ao Purgatório",
+			items: ["Dados", "Little Buddies", "Tickets", "Disastres"],
+		},
+		{
+			name: "Indivíduos que morreram",
+			items: ["Spreen", "DanTDM", "Quackity", "WB12"],
+		},
+	],
+	"18112023": [
+		{
+			name: "Relacionados ao Tubbo",
+			items: ["Fred", "Soulfire", "Philza", "Tubbox"],
+		},
+		{
+			name: "Relacionados ao Arin",
+			items: ["Binário", "Luzu", "Maximus", "Foolish"],
+		},
+		{
+			name: "Relacionados ao Forever",
+			items: ["Richarlyson", "Baghera", "Green Gay Ninjas", "BadBoyHalo"],
+		},
+		{
+			name: "Relacionados à Jaiden",
+			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
+		},
+	],
+	"19112023": [
+		{
 			name: "Nome de Pets de Leonarda",
 			items: ["Bonito", "Matt", "Carlos", "Rocco"],
 		},
@@ -311,25 +347,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Avocado", "Pheonix", "Alfonso II", "Rigby"],
 		},
 	],
-	"18112023": [
-		{
-			name: "Relacionados ao Tubbo",
-			items: ["Fred", "Soulfire", "Philza", "Tubbox"],
-		},
-		{
-			name: "Relacionados ao Arin",
-			items: ["Binário", "Luzu", "Maximus", "Foolish"],
-		},
-		{
-			name: "Relacionados à Bagi",
-			items: ["Cellbit", "Tina", "Alexandre", "Zeno"],
-		},
-		{
-			name: "Relacionados à Jaiden",
-			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
-		},
-	],
-	"19112023": [
+	"20112023": [
 		{
 			name: "Jogadores que já fizeram Trens",
 			items: ["Tubbo", "Vegetta", "TazerCraft", "Forever"],
@@ -345,6 +363,24 @@ export const ALL_CONNECTIONS: {
 		{
 			name: "Família do Philza",
 			items: ["Missa", "Wilbursoot", "Chayanne", "Tallulah"],
+		},
+	],
+	"21112023": [
+		{
+			name: "Indivíduos 'infectados' por algo",
+			items: ["Walter Bob", "Forever", "Slimecicle", "BadBoyHalo"],
+		},
+		{
+			name: "Membros do time Bolas ( Semana 2 )",
+			items: ["Philza", "Cellbit", "Roier", "Ironmouse"],
+		},
+		{
+			name: "Membros do time Soulfire ( Semana 1 )",
+			items: ["Tina", "BadBoyHalo", "Aypierre", "Tubbo"],
+		},
+		{
+			name: "Relacionados ao time Green Ninjas",
+			items: ["Etoiles", "Bagi", "Neve", "Bolas"],
 		},
 	],
 };
