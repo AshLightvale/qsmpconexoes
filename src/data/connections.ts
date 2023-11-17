@@ -313,6 +313,24 @@ export const ALL_CONNECTIONS: {
 	],
 	"18112023": [
 		{
+			name: "Indivíduos 'infectados' por algo",
+			items: ["Walter Bob", "Forever", "Maximus", "BadBoyHalo"],
+		},
+		{
+			name: "Indivíduos com Irmãos",
+			items: ["Slimecicle", "Bagi", "Leonarda", "Baghera"],
+		},
+		{
+			name: "Participaram do Gordinho Gostosinho",
+			items: ["Antoine", "Foolish", "ElQuackity", "TazerCraft"],
+		},
+		{
+			name: "Membros da Federação Rank WB",
+			items: ["Dave", "Ron", "Maximiliano", "Mr.24"],
+		},
+	],
+	"19112023": [
+		{
 			name: "Relacionados ao Tubbo",
 			items: ["Fred", "Soulfire", "Philza", "Tubbox"],
 		},
@@ -329,7 +347,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Bobby", "Roier", "Cucurucho", "Bolas"],
 		},
 	],
-	"19112023": [
+	"20112023": [
 		{
 			name: "Nome de Pets de Leonarda",
 			items: ["Bonito", "Matt", "Carlos", "Rocco"],
@@ -347,7 +365,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Avocado", "Pheonix", "Alfonso II", "Rigby"],
 		},
 	],
-	"20112023": [
+	"21112023": [
 		{
 			name: "Jogadores que já fizeram Trens",
 			items: ["Tubbo", "Vegetta", "TazerCraft", "Forever"],
@@ -363,24 +381,6 @@ export const ALL_CONNECTIONS: {
 		{
 			name: "Família do Philza",
 			items: ["Missa", "Wilbursoot", "Chayanne", "Tallulah"],
-		},
-	],
-	"21112023": [
-		{
-			name: "Indivíduos 'infectados' por algo",
-			items: ["Walter Bob", "Forever", "Slimecicle", "BadBoyHalo"],
-		},
-		{
-			name: "Membros do time Bolas ( Semana 2 )",
-			items: ["Philza", "Cellbit", "Roier", "Ironmouse"],
-		},
-		{
-			name: "Membros do time Soulfire ( Semana 1 )",
-			items: ["Tina", "BadBoyHalo", "Aypierre", "Tubbo"],
-		},
-		{
-			name: "Relacionados ao time Green Ninjas",
-			items: ["Etoiles", "Bagi", "Neve", "Bolas"],
 		},
 	],
 };
