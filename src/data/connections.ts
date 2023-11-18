@@ -383,6 +383,24 @@ export const ALL_CONNECTIONS: {
 			items: ["Missa", "Wilbursoot", "Chayanne", "Tallulah"],
 		},
 	],
+	"22112023": [
+		{
+			name: "Jogadores com Cabelos Pintados",
+			items: ["Cellbit", "Bagi", "Mike", "Jaiden"],
+		},
+		{
+			name: "Afinidade com Sangue",
+			items: ["Roier", "Ironmouse", "BadBoyHalo", "Forever"],
+		},
+		{
+			name: "Chegaram pelo Trem da esquerda",
+			items: ["Slimecicle", "Philza", "Fit", "Maximus"],
+		},
+		{
+			name: "Chegaram pelo Trem da direita",
+			items: ["Luzu", "Missa", "Quackity", "Foolish"],
+		},
+	],
 };
 
 /*
