@@ -340,7 +340,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Relacionados ao Forever",
-			items: ["Richarlyson", "Baghera", "Green Gay Ninjas", "BadBoyHalo"],
+			items: ["Richarlyson", "Baghera", "Green Ninjas", "BadBoyHalo"],
 		},
 		{
 			name: "Relacionados à Jaiden",
