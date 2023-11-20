@@ -29,6 +29,8 @@ const day = [
 	26, 27, 28, 29, 30, 31,
 ];
 
+const Max_Tips = 12;
+
 const COLORS = ["#009d28", "#ff9a00", "#ff0133", "#001884"]; // ["#009d28", "#ff9a00", "#ff0133", "#001884"]
 export default function Game() {
 	const [selected, setSelected] = useState<string[]>([]);
@@ -37,17 +39,24 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const date = now.getDate()
+	const date = now.getDate() - 6
 	const month = now.getMonth() + 1
 	const year = now.getFullYear()
 	const today = date.toString() + month.toString() + year.toString()
 
 	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
 
+  	const [memoryTips, setMemoryTips] = useLocalStorage<{
+    		[name: string]: number;
+  	}>("memoryTips", {});
+
+	
+	const tips = memoryTips[today] || 0;
+		
 	const [memory, setMemory] = useLocalStorage<{
 		[name: string]: Connection[];
 	}>("memory", {});
-
+	
 	const [attempts, setAttempts] = useState<Connection[]>(memory[today] || []);
 
 	const [status, setStatus] = useState<
@@ -78,7 +87,39 @@ export default function Game() {
 	);
 
 	const tries = (memory[today] || []).length;
+	
+  	const [revealedItems, setRevealedItems] = useState<string[]>([]);
+  	const [revealedConnection, setRevealedConnection] = useState<Connection | null>(null);
+  const [savedRevealedTips, setSavedRevealedTips] = useLocalStorage<{
+    [date: string]: { items: string[]; connection: Connection | null };
+  }>('revealedTips', {}); // Use a single key for revealedTips
 
+	
+	  const useTipHandler = () => {
+    		setMemoryTips((prevTips) => ({
+      			...prevTips,
+      			[today]: (prevTips[today] || 0) + 1,
+    		}));
+
+		   const unrevealedConnections = connections.filter(
+      (conn) => !revealedConnection || conn.name !== revealedConnection.name
+    );
+
+    const randomConnection =
+      unrevealedConnections[Math.floor(Math.random() * unrevealedConnections.length)];
+
+  const shuffledItems = shuffle(randomConnection.items);
+  const randomItems = shuffledItems.slice(0, 2);
+
+    setRevealedItems(randomItems);
+    setRevealedConnection(randomConnection);
+
+    setSavedRevealedTips({
+      ...savedRevealedTips,
+      [today]: { items: randomItems, connection: randomConnection },
+    });
+  	};
+	
 	function selectFourHandler(selected: string[]) {
 		const correctConnection = connections.find((connection) =>
 			selected.every((s) => connection.items.includes(s))
@@ -109,6 +150,13 @@ export default function Game() {
 		setMemory((old) => ({ ...old, [today]: attempts }));
 	}, [attempts, setMemory, today]);
 
+  useEffect(() => {
+    if (savedRevealedTips[today]) {
+      setRevealedItems(savedRevealedTips[today].items);
+      setRevealedConnection(savedRevealedTips[today].connection);
+    }
+  }, [savedRevealedTips, today]);
+
 	return (
 		<div className="max-w-[512px] w-[90%] my-12 flex flex-col items-center">
 			<header className="flex justify-between items-center w-full">
@@ -123,7 +171,7 @@ export default function Game() {
 					</Link>
 				</Button>
 				<h1 className="text-xl font-bold">QSMP Conexões</h1>
-				<InfoDialog />
+				<InfoDialog/>
 			</header>
 			{/* <pre>{JSON.stringify(memory[today], null, 2)}</pre> */}
 			{memory[today] && (
@@ -140,7 +188,7 @@ export default function Game() {
 										Parabéns!
 									</span>
 									<span>
-										Você conseguiu em <b>{tries}</b> tentativas.
+										Você conseguiu com <b>{tips}</b> dicas e em <b>{tries}</b> tentativas.
 									</span>
 								</div>
 								<span className="mt-4 block break-words">
@@ -160,7 +208,7 @@ export default function Game() {
 										className="mt-2"
 										onClick={() => {
 											copyResult(
-												`Joguei QSMP Conexões e consegui em ${tries} tentativas: \n\n${result.join(
+												`Joguei QSMP Conexões e consegui com ${tips} dicas e em ${tries} tentativas: \n\n${result.join(
 													""
 												)}\n\nPara jogar também acesse: qsmp-conexoes.vercel.app`
 											);
@@ -240,7 +288,7 @@ export default function Game() {
 							</div>
 						</motion.div>
 					)}
-					<div className="flex justify-between">
+					<div className="flex justify-between items-center flex">
 						<span className="text-bold">
 							{new Date().toLocaleString("pt-BR", {
 								day: "numeric",
@@ -249,12 +297,42 @@ export default function Game() {
 							})}
 						</span>
 						<span>
-							Tentativas:{" "}
+							TENTATIVAS:{" "}
 							<strong className="text-bold">{tries}</strong>
 						</span>
 					</div>
+					{status !== 'over' && (
+						<div className="bg-transparent rounded-md px-4 py-1 text-center flex flex-col items-center gap-150">
+							<Button
+								onClick={useTipHandler}
+								variant="outline"
+								className="h-auto flex gap-2 bg-muted border-primary/10 hover:bg-primary/10 cursor-pointer"
+								asChild
+							>
+								<div className="text-left">
+									<span className="block cursor-pointer">
+										Usar uma dica
+									</span>
+								</div>
+							</Button>
+						</div>
+					)}
 					<div className="mt-4">
 						<div className="space-y-2">
+ {status !== 'over' && savedRevealedTips[today] && !savedRevealedTips[today].items.every(item =>
+          corrects.some(connection => connection.items.includes(item))
+        ) && savedRevealedTips[today].items.map((item, index) => (
+          <motion.div
+            key={index}
+            style={{
+              "--color": savedRevealedTips[today].connection?.color,
+            } as React.CSSProperties}
+            className="h-[20px] opacity-1 sm:h-[30px] text-xs sm:text-base flex flex-col items-center justify-center bg-[var(--color)] rounded-md"
+          >
+            <p>{item}</p>
+          </motion.div>
+        ))}
+
 							{corrects.map((connection) => (
 								<motion.div
 									key={connection.name}
@@ -310,6 +388,7 @@ export default function Game() {
 														)
 												)?.color,
 											} as React.CSSProperties
+
 										}
 										className="
 											data-[wrong=true]:animate-shake
