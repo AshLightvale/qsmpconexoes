@@ -401,6 +401,42 @@ export const ALL_CONNECTIONS: {
 			items: ["Luzu", "Missa", "Quackity", "Foolish"],
 		},
 	],
+	"23112023": [
+		{
+			name: "Participarem de Ordem Paranormal Quarentena",
+			items: ["Baghera", "Foolish", "Bagi", "Pac"],
+		},
+		{
+			name: "Jogadores com Tickets Especiais",
+			items: ["Philza", "Quackity", "Wilbursoot", "Vegetta"],
+		},
+		{
+			name: "Jogadores que já casaram",
+			items: ["Mike", "ElMariana", "Slimecicle", "Juanaflippa"],
+		},
+		{
+			name: "Clientes do Psicologoier",
+			items: ["Cellbit", "BadBoyHalo", "Maximus", "Missa"],
+		},
+	],
+	"24112023": [
+		{
+			name: "Participarem de Ordem Paranormal Quarentena",
+			items: ["Baghera", "Foolish", "Quackity", "Pac"],
+		},
+		{
+			name: "Personagens do Roier",
+			items: ["Roier", "Melissa", "Abueloir", "Hombre Misterioso"],
+		},
+		{
+			name: "Clientes do Psicologoier",
+			items: ["Cellbit", "Forever", "Slimecicle", "Maximus"],
+		},
+		{
+			name: "The Swellers",
+			items: ["Jaiden", "Slimecicle", "Baghera", "Foolish"],
+		},
+	],
 };
 
 /*
