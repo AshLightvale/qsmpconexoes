@@ -411,7 +411,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Philza", "Quackity", "Wilbursoot", "Vegetta"],
 		},
 		{
-			name: "Jogadores que já casaram",
+			name: "índividuos que usam óculos",
 			items: ["Mike", "ElMariana", "Slimecicle", "Juanaflippa"],
 		},
 		{
@@ -421,16 +421,16 @@ export const ALL_CONNECTIONS: {
 	],
 	"24112023": [
 		{
-			name: "Participarem de Ordem Paranormal Quarentena",
-			items: ["Baghera", "Foolish", "Quackity", "Pac"],
+			name: "Ovos que foram adotados por 5 pais",
+			items: ["Pomme", "Richarlyson", "Empanada", "Pepito"],
 		},
 		{
-			name: "Personagens do Roier",
-			items: ["Roier", "Melissa", "Abueloir", "Hombre Misterioso"],
+			name: "Índividuos relacionados ao Tubbo",
+			items: ["Philza", "Chayanne", "Tallulah", "Sunny"],
 		},
 		{
-			name: "Clientes do Psicologoier",
-			items: ["Cellbit", "Forever", "Slimecicle", "Maximus"],
+			name: "Mães de Empanada",
+			items: ["Nihachu", "Bagi", "Tina", "Ironmouse"],
 		},
 		{
 			name: "The Swellers",
