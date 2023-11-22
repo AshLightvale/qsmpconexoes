@@ -447,12 +447,12 @@ export const ALL_CONNECTIONS: {
 			items: ["Quackity", "Maximus", "Spreen", "DanTDM"],
 		},
 		{
-			name: "Mães de Empanada",
-			items: ["Nihachu", "Bagi", "Tina", "Ironmouse"],
+			name: "Pais da Sunny",
+			items: ["Lenay", "Tubbo", "Polispol", "Slimecicle"],
 		},
 		{
-			name: "The Swellers",
-			items: ["Jaiden", "Slimecicle", "Baghera", "Foolish"],
+			name: "Ovos que tem mães(s)",
+			items: ["Empanada", "Sunny", "Pomme", "Dapper"],
 		},
 	],
 };
