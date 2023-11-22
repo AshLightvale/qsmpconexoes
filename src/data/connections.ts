@@ -437,6 +437,24 @@ export const ALL_CONNECTIONS: {
 			items: ["Jaiden", "Slimecicle", "Baghera", "Foolish"],
 		},
 	],
+	"25112023": [
+		{
+			name: "Ovos relacionados ao Roier",
+			items: ["Pepito", "Richarlyson", "Bobby", "Tilin"],
+		},
+		{
+			name: "Jogadores com personagens mortos",
+			items: ["Quackity", "Maximus", "Spreen", "DanTDM"],
+		},
+		{
+			name: "Mães de Empanada",
+			items: ["Nihachu", "Bagi", "Tina", "Ironmouse"],
+		},
+		{
+			name: "The Swellers",
+			items: ["Jaiden", "Slimecicle", "Baghera", "Foolish"],
+		},
+	],
 };
 
 /*
