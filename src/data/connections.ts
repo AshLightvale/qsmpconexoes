@@ -455,6 +455,60 @@ export const ALL_CONNECTIONS: {
 			items: ["Empanada", "Sunny", "Pomme", "Dapper"],
 		},
 	],
+	"26112023": [
+		{
+			name: "Membros do RadioEgg",
+			items: ["Pomme", "Richarlyson", "Leonarda", "Tallulah"],
+		},
+		{
+			name: "Ovos que morreram em 'Pesadelos'",
+			items: ["Ramon", "Dapper", "Chayanne", "Bobby"],
+		},
+		{
+			name: "Relacionados ao Quackity",
+			items: ["Pepito", "Tilin", "ElQuackity", "Luzu"],
+		},
+		{
+			name: "Relacionados ao Slimecicle",
+			items: ["Juanaflippa", "Sunny", "ElMariana", "Mike"],
+		},
+	],
+"27112023": [
+		{
+			name: "Trabalharam na Casualonas",
+			items: ["Maximus", "Roier", "Vegetta", "BadBoyHalo"],
+		},
+		{
+			name: "Já fizeram Farms usando Create",
+			items: ["Philza", "Tubbo", "Aypierre", "TazerCraft"],
+		},
+		{
+			name: "Ganharam novos ovos",
+			items: ["Jaiden", "Slimecicle", "ElMariana", "Quackity"],
+		},
+		{
+			name: "Co-Parentes do Cellbit",
+			items: ["Forever", "Felps", "Pac", "Mike"],
+		},
+	],
+"28112023": [
+		{
+			name: "Moradores do Castelo do Cellbit",
+			items: ["Cellbit", "Roier", "Foolish", "Vegetta"],
+		},
+		{
+			name: "Antigo habitantes de Sacapuntas",
+			items: ["Philza", "Jaiden", "Wilbursoot", "Quackity"],
+		},
+		{
+			name: "Tios/Tias do Richarlyson",
+			items: ["Bagi", "Slimecicle", "Leonarda", "Baghera"],
+		},
+		{
+			name: "'Filhos' do Etoiles",
+			items: ["Pomme", "Dapper", "Richarlyson", "Pepito"],
+		},
+	],
 };
 
 /*
