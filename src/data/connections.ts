@@ -439,37 +439,37 @@ export const ALL_CONNECTIONS: {
 	],
 	"25112023": [
 		{
-			name: "Ovos relacionados ao Roier",
+			name: "Ovos_Roier",
 			items: ["Pepito", "Richarlyson", "Bobby", "Tilin"],
 		},
 		{
-			name: "Jogadores com personagens mortos",
+			name: "Jogadores_Mortos",
 			items: ["Quackity", "Maximus", "Spreen", "DanTDM"],
 		},
 		{
-			name: "Pais da Sunny",
+			name: "Sunny_Pais",
 			items: ["Lenay", "Tubbo", "Polispol", "Slimecicle"],
 		},
 		{
-			name: "Ovos que tem mães(s)",
+			name: "Ovos_Maes",
 			items: ["Empanada", "Sunny", "Pomme", "Dapper"],
 		},
 	],
 	"26112023": [
 		{
-			name: "Membros do RadioEgg",
+			name: "RadioEgg",
 			items: ["Pomme", "Richarlyson", "Leonarda", "Tallulah"],
 		},
 		{
-			name: "Ovos que morreram em 'Pesadelos'",
+			name: "Ovos_Pesadelos",
 			items: ["Ramon", "Dapper", "Chayanne", "Bobby"],
 		},
 		{
-			name: "Relacionados ao Quackity",
+			name: "Relacionados_Quackity",
 			items: ["Pepito", "Tilin", "ElQuackity", "Luzu"],
 		},
 		{
-			name: "Relacionados ao Slimecicle",
+			name: "Relacionados_Slimecicle",
 			items: ["Juanaflippa", "Sunny", "ElMariana", "Mike"],
 		},
 	],
