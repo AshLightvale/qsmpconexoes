@@ -9,7 +9,6 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
 import { shuffle } from "@/utils/shuffle";
 import { ALL_CONNECTIONS } from "@/data/connections";
-import { translate } from "@/utils/translate";
 import { InfoDialog } from "@/components/info-dialog";
 import Image from "next/image";
 import {
