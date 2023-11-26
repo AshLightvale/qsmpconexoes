@@ -9,6 +9,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocalStorage, useCopyToClipboard } from "usehooks-ts";
 import { shuffle } from "@/utils/shuffle";
 import { ALL_CONNECTIONS } from "@/data/connections";
+import { translate } from "@/utils/translate";
 import { InfoDialog } from "@/components/info-dialog";
 import Image from "next/image";
 import {
@@ -17,6 +18,223 @@ import {
 	DialogHeader,
 	DialogTitle,
 } from "@/components/ui/dialog";
+
+// Translations Zone
+
+type Translations = {
+  en: { [key: string]: string };
+  pt: { [key: string]: string };
+  es: { [key: string]: string };
+  fr: { [key: string]: string };
+	
+  [key: string]: { [key: string]: string };
+};
+
+const translations: Translations = {
+  en: {
+    	Header: 'QSMP Connections',
+	  
+    	Tries: 'TRIES',
+	Informations: 'Informations taken from the Wiki.',
+	Copied: 'Copied!',
+	Share: 'Share',
+	ShareMessage: 'I played QSMP Connections and I did it with {tips} hints and in {tries} attempts:\n\n{result}\n\nTo play, visit: qsmp-conexoes.vercel.app',
+	  
+	Suggestions: 'Did you like QSMP Connections?\nProvide suggestions:',
+	SuggestionsForum: 'Suggestions Forum:',
+	MultiQSMP: 'Do you enjoy watching various QSMP POVs?\nTry out MultiQSMP:',
+	UseTip: 'Use a hint',
+	  
+	Congratulations1: 'Congratulations',
+	Congratulations2: 'You completed it with {tips} hints and in {tries} attempts.',
+  },
+  pt: {
+    	Header: 'QSMP Conexões',
+
+    	Tries: 'TENTATIVAS',
+	Informations: 'Informações tiradas da wiki.',
+	Copied: 'Copiado!',
+	Share: 'Compartilhar',
+ 	ShareMessage: 'Joguei QSMP Conexões e consegui com {tips} dicas e em {tries} tentativas:\n\n{result}\n\nPara jogar também acesse: qsmp-conexoes.vercel.app',
+	  
+	Suggestions: 'Gostou do QSMP Conexões?\nDê sugestões:',
+	SuggestionsForum: 'Forum de Sugestões:',
+	MultiQSMP: 'Gosta de assistir vários POVs do QSMP?\nExperimente o MultiQSMP:',
+	UseTip: 'Usar uma dica',
+	
+	Congratulations1: 'Parabéns!',
+	Congratulations2: 'Você conseguiu com {tips} dicas e em {tries} tentativas.',
+  },
+es: {
+    Header: 'QSMP Conexiones',
+    
+    Tries: 'INTENTOS',
+    Informations: 'Información tomada de la Wiki.',
+    Copied: '¡Copiado!',
+    Share: 'Compartir',
+    ShareMessage: 'Jugué QSMP onexiones y lo logré con {tips} pistas y en {tries} intentos:\n\n{result}\n\nPara jugar, visita: qsmp-conexoes.vercel.app',
+    
+    Suggestions: '¿Te gustaron las QSMP Conexiones?\n¡Proporciona sugerencias!',
+    SuggestionsForum: 'Foro de Sugerencias:',
+    MultiQSMP: '¿Disfrutas viendo varios POVs de QSMP?\nPrueba MultiQSMP:',
+    UseTip: 'Usar una pista',
+	
+    Congratulations1: 'Felicidades',
+    Congratulations2: 'Lo lograste con {tips} pistas y en {tries} intentos.',
+  },
+  fr: {
+    Header: 'QSMP Connexions',
+
+    Tries: 'ESSAIS',
+    Informations: 'Informations tirées du Wiki.',
+    Copied: 'Copié!',
+    Share: 'Partager',
+    ShareMessage: 'J\'ai joué à QSMP Connexions et je réussi avec {tips} astuces et en {tries} tentatives :\n\n{result}\n\nPour jouer, visitez : qsmp-conexoes.vercel.app',
+    
+    Suggestions: 'Vous avez aimé QSMP Connexions?\nFournissez des suggestions :',
+    SuggestionsForum: 'Forum des suggestions :',
+    MultiQSMP: 'Vous aimez regarder différents POVs de QSMP ?\nEssayez MultiQSMP:',
+    UseTip: 'Utiliser une astuce',
+	  
+    Congratulations1: 'Félicitations',
+    Congratulations2: 'Vous avez réussi avec {tips} astuces et en {tries} tentatives.',
+  },
+};
+
+const connectionNameTranslations: { [name: string]: { [key: string]: string } } = {
+  Ovos_Roier: {
+    en: "Eggs related to Roier",
+    pt: "Ovos relacionados ao Roier",
+    es: "Huevos relacionados con Roier",
+    fr: "Œufs liés à Roier",
+  },
+  Jogadores_Mortos: {
+    en: "Players with dead characters",
+    pt: "Jogadores com personagens mortos",
+    es: "Jugadores con personajes muertos",
+    fr: "Joueurs avec des personnages morts",
+  },
+  Sunny_Pais: {
+    en: "Sunny's Parents",
+    pt: "Pais da Sunny",
+    es: "Padres de Sunny",
+    fr: "Parents de Sunny",
+  },
+  Ovos_Maes: {
+    en: "Eggs that have mom(s)",
+    pt: "Ovos que tem mães(s)",
+    es: "Huevos que tienen madre(s)",
+    fr: "Œufs qui ont mère(s)",
+  },
+//--------------------------
+RadioEgg: {
+	en: "RadioEgg Members",
+	pt: "Membros do RadioEgg",
+  	es: "Miembros de RadioEgg",
+ 	fr: "Membres de RadioEgg",
+},
+Ovos_Pesadelos: {
+	en: "Eggs that died in 'Nightmares'",
+    	pt: "Ovos que morreram em 'Pesadelos'",
+  	es: "Huevos que murieron en 'Pesadillas'",
+  	fr: "Œufs morts dans les 'Cauchemars'",
+},
+Relacionados_Quackity: {
+	en: "Related to Quackity",
+    	pt: "Relacionados ao Quackity",
+  	es: "Relacionados con Quackity",
+  	fr: "En rapport avec Quackity",
+},
+Relacionados_Slimecicle: {
+	en: "Related to Slimecicle",
+    	pt: "Relacionados ao Slimecicle",
+  	es: "Relacionados con Slimecicle",
+  	fr: "En rapport avec Slimecicle",
+},
+	
+};
+
+
+type LanguageOption = {
+  value: string;
+  label: string;
+  flag: string;
+};
+
+interface LanguageDropdownProps {
+  selectedLanguage: string;
+  handleLanguageChange: (language: string) => void;
+  languageOptions: LanguageOption[];
+}
+
+const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ selectedLanguage, handleLanguageChange, languageOptions }) => {
+  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+
+  const getFlag = (language: string): string => {
+    return languageOptions.find((option) => option.value === language)?.flag || '';
+  };
+
+  const getLabel = (language: string): string => {
+    return languageOptions.find((option) => option.value === language)?.label || '';
+  };
+
+  return (
+<div className="lang-menu" style={{ position: 'relative' }}>
+  <div
+    className="selected-lang"
+    onClick={() => setDropdownOpen(!dropdownOpen)}
+    style={{ display: 'flex', alignItems: 'center' }}
+  >
+    <Image
+      src={getFlag(selectedLanguage)}
+      alt={`Flag for ${selectedLanguage}`}
+      width={25}
+      height={25}
+      style={{ marginRight: '5px' }}
+    />
+    <span>{getLabel(selectedLanguage)}</span>
+  </div>
+  {dropdownOpen && (
+    <ul
+  style={{
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    gap: '0px', 
+    position: 'absolute',
+    top: '100%',
+    right: 0,
+    zIndex: 1000,
+  }}
+    >
+      {languageOptions.map((option) => (
+        <li key={option.value}>
+          <a
+            href="#"
+            className="bg-muted rounded-md"
+            onClick={() => handleLanguageChange(option.value)}
+            style={{ display: 'flex', alignItems: 'center' }}
+          >
+            <Image
+              src={option.flag}
+              alt={`Flag for ${option.label}`}
+              width={25}
+              height={25}
+              style={{ marginRight: '5px' }}
+            />
+            <span>{option.label}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
+
+
+  );
+};
+
+//------------------------------------------------------------------
 
 type Connection = {
 	name?: string;
@@ -39,16 +257,42 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const date = now.getDate()
+	const date = now.getDate() + 1
 	const month = now.getMonth() + 1
 	const year = now.getFullYear()
 	const today = date.toString() + month.toString() + year.toString()
 
+	const getTranslation = (key: string, language: string = 'en'): string => {
+	  	const connectionId = ALL_CONNECTIONS[today].find(connection => connection.name == key);
+
+if (connectionId && connectionId.name) {
+  return (connectionNameTranslations[connectionId.name]?.[language]) || key;
+}
+
+return (translations[language][key]) || key;
+	};
+	
 	const CONNECTIONS = ALL_CONNECTIONS[today] || [];
 
+	  const languageOptions: LanguageOption[] = [
+    		{ value: 'en', label: 'EN', flag: '/us.svg' },
+    		{ value: 'pt', label: 'BR', flag: '/br.svg' },
+		{ value: 'es', label: 'ES', flag: '/es.svg' },
+		{ value: 'fr', label: 'FR', flag: '/fr.svg' },
+    		// Add more language options as needed
+  	];
+	
   	const [memoryTips, setMemoryTips] = useLocalStorage<{
     		[name: string]: number;
   	}>("memoryTips", {});
+
+
+  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+
+  const handleLanguageChange = (language: string) => {
+    setSelectedLanguage(language);
+    setDropdownOpen(false);
+  };
 
 	
 	const tips = memoryTips[today] || 0;
@@ -59,6 +303,8 @@ export default function Game() {
 	
 	const [attempts, setAttempts] = useState<Connection[]>(memory[today] || []);
 
+	const [selectedLanguage, setSelectedLanguage] = useLocalStorage("selectedLanguage", "pt");
+	
 	const [status, setStatus] = useState<
 		"waiting" | "wrong" | "correct" | "over"
 	>(
@@ -157,8 +403,18 @@ export default function Game() {
     }
   }, [savedRevealedTips, today]);
 
+	const resetMemory = () => {
+  setMemory({});
+};
 	return (
 		<div className="max-w-[512px] w-[90%] my-12 flex flex-col items-center">
+			<header className="flex items-right w-full">
+			        <LanguageDropdown
+          				selectedLanguage={selectedLanguage}
+         				handleLanguageChange={handleLanguageChange}
+          				languageOptions={languageOptions}
+        			/>
+			</header>
 			<header className="flex justify-between items-center w-full">
 				<Button
 					variant="ghost"
@@ -170,8 +426,8 @@ export default function Game() {
 						<ArrowLeft size="1.25rem" />
 					</Link>
 				</Button>
-				<h1 className="text-xl font-bold">QSMP Conexões</h1>
-				<InfoDialog/>
+				<h1 className="text-xl font-bold">{getTranslation('Header', selectedLanguage)}</h1>
+				 <InfoDialog selectedLanguage={selectedLanguage}/>
 			</header>
 			{/* <pre>{JSON.stringify(memory[today], null, 2)}</pre> */}
 			{memory[today] && (
@@ -185,10 +441,16 @@ export default function Game() {
 							<div className="mb-3 bg-muted rounded-md px-6 py-4 text-center">
 								<div className="text-center">
 									<span className="block text-lg font-bold">
-										Parabéns!
+										{getTranslation('Congratulations1', selectedLanguage)}
 									</span>
 									<span>
-										Você conseguiu com <b>{tips}</b> dicas e em <b>{tries}</b> tentativas.
+										<span
+  											dangerouslySetInnerHTML={{
+    												__html: getTranslation('Congratulations2', selectedLanguage)
+      												.replace('{tips}', `<b>${tips}</b>`)
+      												.replace('{tries}', `<b>${tries}</b>`),
+  											}}
+										/>
 									</span>
 								</div>
 								<span className="mt-4 block break-words">
@@ -201,16 +463,17 @@ export default function Game() {
 											animate={{ scale: 1, opacity: 1 }}
 											exit={{ scale: 0, opacity: 0 }}
 										>
-											Copiado!
+											{getTranslation('Copied', selectedLanguage)}
 										</motion.span>
 									)}
 									<Button
 										className="mt-2"
 										onClick={() => {
 											copyResult(
-												`Joguei QSMP Conexões e consegui com ${tips} dicas e em ${tries} tentativas: \n\n${result.join(
-													""
-												)}\n\nPara jogar também acesse: qsmp-conexoes.vercel.app`
+												  getTranslation('ShareMessage', selectedLanguage)
+    													.replace('{tips}', `${tips}`)
+    													.replace('{tries}', `${tries}`)
+    													.replace('{result}', result.join(""))
 											);
 
 											setCopiedAlert(true);
@@ -220,14 +483,13 @@ export default function Game() {
 											}, 5000);
 										}}
 									>
-										Compartilhar
+										{getTranslation('Share', selectedLanguage)}
 									</Button>
 								</div>
 							</div>
 							<div className="mb-3 bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
-								<p className="text-balance">
-									Gostou do QSMP Conexões?
-									Dê sugestões:
+								<p className="text-balance" style={{ whiteSpace: 'pre-line' }}>
+									{getTranslation('Suggestions', selectedLanguage)}
 								</p>
 								<Button
 									variant="outline"
@@ -246,7 +508,7 @@ export default function Game() {
 										/>
 										<div className="text-left">
 											<span className="block">
-												Forum de Sugestões:
+												{getTranslation('SuggestionsForum', selectedLanguage)}
 											</span>
 											<span className="text-sm text-muted-foreground">
 												forms.gle/Dvwm4osQZ25P8jMd9
@@ -256,9 +518,8 @@ export default function Game() {
 								</Button>
 							</div>
 							<div className="bg-muted rounded-md px-6 py-4 text-center flex flex-col items-center gap-2">
-								<p className="text-balance">
-									Gosta de assistir varios POV do QSMP?
-									Experimente o MultiQSMP:
+								<p className="text-balance" style={{ whiteSpace: 'pre-line' }}>
+									{getTranslation('MultiQSMP', selectedLanguage)}
 								</p>
 								<Button
 									variant="outline"
@@ -290,14 +551,14 @@ export default function Game() {
 					)}
 					<div className="flex justify-between items-center flex">
 						<span className="text-bold">
-							{new Date().toLocaleString("pt-BR", {
+							{new Date().toLocaleString(selectedLanguage, {
 								day: "numeric",
 								month: "numeric",
 								year: "numeric",
 							})}
 						</span>
 						<span>
-							TENTATIVAS:{" "}
+							{getTranslation('Tries', selectedLanguage)}:{" "}
 							<strong className="text-bold">{tries}</strong>
 						</span>
 					</div>
@@ -311,7 +572,7 @@ export default function Game() {
 							>
 								<div className="text-left">
 									<span className="block cursor-pointer">
-										Usar uma dica
+										{getTranslation('UseTip', selectedLanguage)}
 									</span>
 								</div>
 							</Button>
@@ -335,7 +596,7 @@ export default function Game() {
 
 							{corrects.map((connection) => (
 								<motion.div
-									key={connection.name}
+									key= {getTranslation(connection.name || 'DefaultName', selectedLanguage)}
 									style={
 										{
 											"--color": connection.color,
@@ -345,7 +606,7 @@ export default function Game() {
 									animate={{ opacity: 1 }}
 								>
 									<span className="font-bold">
-										{connection.name}
+										{getTranslation(connection.name || 'DefaultName', selectedLanguage)}
 									</span>
 									<p>{connection.items.join(", ")}</p>
 								</motion.div>
@@ -423,7 +684,7 @@ export default function Game() {
 				</main>
 			)}
 			<p className="block mt-auto text-sm text-muted-foreground">
-				Informações tiradas da wiki.
+				{getTranslation('Informations', selectedLanguage)}
 			</p>
 		</div>
 	);
