@@ -101,56 +101,107 @@ es: {
 };
 
 const connectionNameTranslations: { [name: string]: { [key: string]: string } } = {
-  Ovos_Roier: {
-    en: "Eggs related to Roier",
-    pt: "Ovos relacionados ao Roier",
-    es: "Huevos relacionados con Roier",
-    fr: "Œufs liés à Roier",
-  },
-  Jogadores_Mortos: {
-    en: "Players with dead characters",
-    pt: "Jogadores com personagens mortos",
-    es: "Jugadores con personajes muertos",
-    fr: "Joueurs avec des personnages morts",
-  },
-  Sunny_Pais: {
-    en: "Sunny's Parents",
-    pt: "Pais da Sunny",
-    es: "Padres de Sunny",
-    fr: "Parents de Sunny",
-  },
-  Ovos_Maes: {
-    en: "Eggs that have mom(s)",
-    pt: "Ovos que tem mães(s)",
-    es: "Huevos que tienen madre(s)",
-    fr: "Œufs qui ont mère(s)",
-  },
+	  Ovos_Roier: {
+	    en: "Eggs related to Roier",
+	    pt: "Ovos relacionados ao Roier",
+	    es: "Huevos relacionados con Roier",
+	    fr: "Œufs liés à Roier",
+	  },
+	  Jogadores_Mortos: {
+	    en: "Players with dead characters",
+	    pt: "Jogadores com personagens mortos",
+	    es: "Jugadores con personajes muertos",
+	    fr: "Joueurs avec des personnages morts",
+	  },
+	  Sunny_Pais: {
+	    en: "Sunny's Parents",
+	    pt: "Pais da Sunny",
+	    es: "Padres de Sunny",
+	    fr: "Parents de Sunny",
+	  },
+	  Ovos_Maes: {
+	    en: "Eggs that have mom(s)",
+	    pt: "Ovos que tem mães(s)",
+	    es: "Huevos que tienen madre(s)",
+	    fr: "Œufs qui ont mère(s)",
+	  },
 //--------------------------
-RadioEgg: {
-	en: "RadioEgg Members",
-	pt: "Membros do RadioEgg",
-  	es: "Miembros de RadioEgg",
- 	fr: "Membres de RadioEgg",
-},
-Ovos_Pesadelos: {
-	en: "Eggs that died in 'Nightmares'",
-    	pt: "Ovos que morreram em 'Pesadelos'",
-  	es: "Huevos que murieron en 'Pesadillas'",
-  	fr: "Œufs morts dans les 'Cauchemars'",
-},
-Relacionados_Quackity: {
-	en: "Related to Quackity",
-    	pt: "Relacionados ao Quackity",
-  	es: "Relacionados con Quackity",
-  	fr: "En rapport avec Quackity",
-},
-Relacionados_Slimecicle: {
-	en: "Related to Slimecicle",
-    	pt: "Relacionados ao Slimecicle",
-  	es: "Relacionados con Slimecicle",
-  	fr: "En rapport avec Slimecicle",
-},
+	RadioEgg: {
+		en: "RadioEgg Members",
+		pt: "Membros do RadioEgg",
+	  	es: "Miembros de RadioEgg",
+	 	fr: "Membres de RadioEgg",
+	},
+	Ovos_Pesadelos: {
+		en: "Eggs that died in 'Nightmares'",
+	    	pt: "Ovos que morreram em 'Pesadelos'",
+	  	es: "Huevos que murieron en 'Pesadillas'",
+	  	fr: "Œufs morts dans les 'Cauchemars'",
+	},
+	Relacionados_Quackity: {
+		en: "Related to Quackity",
+	    	pt: "Relacionados ao Quackity",
+	  	es: "Relacionados con Quackity",
+	  	fr: "En rapport avec Quackity",
+	},
+	Relacionados_Slimecicle: {
+		en: "Related to Slimecicle",
+	    	pt: "Relacionados ao Slimecicle",
+	  	es: "Relacionados con Slimecicle",
+	  	fr: "En rapport avec Slimecicle",
+	},
+//--------------------------
+	Trabalharam_Casualonas: {
+	  en: "Worked at Casualonas",
+	  pt: "Trabalharam na Casualonas",
+	  es: "Trabajaron en Casualonas",
+	  fr: "Ont travaillé chez Casualonas",
+	},
+	Farms_Create: {
+	  en: "Have made various Create Farms",
+	  pt: "Fizeram diversas Farms usando Create",
+	  es: "Han creado varias Farms con Create",
+	  fr: "Ont créé plusieurs fermes avec Create",
+	},
+	Ganharam_Ovos: {
+	  en: "Have gotten new eggs",
+	  pt: "Ganharam ovos novos",
+	  es: "Han obtenido nuevos huevos",
+	  fr: "Ont obtenu de nouveaux œufs",
+	},
+	Parentes_Cellbit: {
+	  en: "Cellbit's Co-Parents",
+	  pt: "Co-Parentes do Cellbit",
+	  es: "Co-padres de Cellbit",
+	  fr: "Co-parents de Cellbit",
+	},
+//--------------------------
 	
+	Moradores_Cellbit: {
+	  en: "Residents of Cellbit's Castle",
+	  pt: "Moradores do Castelo do Cellbit",
+	  es: "Moradores del Castillo de Cellbit",
+	  fr: "Résidents du château de Cellbit",
+	},
+	Habitantes_Sacapuntas: {
+	  en: "Former inhabitants of Sacapuntas",
+	  pt: "Antigos habitantes de Sacapuntas",
+	  es: "Antiguos habitantes de Sacapuntas",
+	  fr: "Anciens habitants de Sacapuntas",
+	},
+	Tios_Richarlyson: {
+	  en: "Uncles/Aunts of Richarlyson",
+	  pt: "Tios/Tias do Richarlyson",
+	  es: "Tíos/Tías de Richarlyson",
+	  fr: "Oncles/Tantes de Richarlyson",
+	},
+	Filhos_Etoiles: {
+	  en: "Etoiles's 'Children'",
+	  pt: "'Filhos' do Etoiles",
+	  es: "'Hijos' del Etoiles",
+	  fr: "'Enfants' d'Etoiles",
+	},
+
 };
 
 
