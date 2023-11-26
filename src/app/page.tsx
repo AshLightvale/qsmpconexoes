@@ -256,7 +256,7 @@ export default function Game() {
 	const [copiedAlert, setCopiedAlert] = useState(false);
 
 	const now = new Date();
-	const date = now.getDate() + 1
+	const date = now.getDate()
 	const month = now.getMonth() + 1
 	const year = now.getFullYear()
 	const today = date.toString() + month.toString() + year.toString()
