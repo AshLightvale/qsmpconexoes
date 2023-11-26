@@ -475,15 +475,15 @@ export const ALL_CONNECTIONS: {
 	],
 "27112023": [
 		{
-			name: "Trabalharam na Casualonas",
+			name: "Trabalharam_Casualonas",
 			items: ["Maximus", "Roier", "Vegetta", "BadBoyHalo"],
 		},
 		{
-			name: "Já fizeram Farms usando Create",
-			items: ["Philza", "Tubbo", "Aypierre", "TazerCraft"],
+			name: "Farms_Create",
+			items: ["Forever", "Tubbo", "Aypierre", "TazerCraft"],
 		},
 		{
-			name: "Ganharam novos ovos",
+			name: "Ganharam_Ovos",
 			items: ["Jaiden", "Slimecicle", "ElMariana", "Quackity"],
 		},
 		{
@@ -493,19 +493,19 @@ export const ALL_CONNECTIONS: {
 	],
 "28112023": [
 		{
-			name: "Moradores do Castelo do Cellbit",
+			name: "Moradores_Cellbit",
 			items: ["Cellbit", "Roier", "Foolish", "Vegetta"],
 		},
 		{
-			name: "Antigo habitantes de Sacapuntas",
+			name: "Habitantes_Sacapuntas",
 			items: ["Philza", "Jaiden", "Wilbursoot", "Quackity"],
 		},
 		{
-			name: "Tios/Tias do Richarlyson",
+			name: "Tios_Richarlyson",
 			items: ["Bagi", "Slimecicle", "Leonarda", "Baghera"],
 		},
 		{
-			name: "'Filhos' do Etoiles",
+			name: "Filhos_Etoiles",
 			items: ["Pomme", "Dapper", "Richarlyson", "Pepito"],
 		},
 	],
