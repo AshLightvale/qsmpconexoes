@@ -169,11 +169,11 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  es: "Han obtenido nuevos huevos",
 	  fr: "Ont obtenu de nouveaux œufs",
 	},
-	Parentes_Cellbit: {
-	  en: "Cellbit's Co-Parents",
-	  pt: "Co-Parentes do Cellbit",
-	  es: "Co-padres de Cellbit",
-	  fr: "Co-parents de Cellbit",
+	Parentes_Forever: {
+	  en: "Forever's Co-Parents",
+	  pt: "Co-Parentes do Forever",
+	  es: "Co-padres de Forever",
+	  fr: "Co-parents de Forever",
 	},
 //--------------------------
 	
