@@ -487,8 +487,8 @@ export const ALL_CONNECTIONS: {
 			items: ["Jaiden", "Slimecicle", "ElMariana", "Quackity"],
 		},
 		{
-			name: "Co-Parentes do Cellbit",
-			items: ["Forever", "Felps", "Pac", "Mike"],
+			name: "Parentes_Forever",
+			items: ["Cellbit", "Felps", "Pac", "Mike"],
 		},
 	],
 "28112023": [
