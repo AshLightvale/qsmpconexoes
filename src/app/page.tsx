@@ -202,6 +202,57 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  fr: "'Enfants' d'Etoiles",
 	},
 
+
+
+	  Membros_Resistencia: {
+	    en: "Members of the Resistance",
+	    pt: "Membros da Resistência",
+	    es: "Miembros de la Resistencia",
+	    fr: "Membres de la Résistance"
+	  },
+	  Donos_Estabelecimentos: {
+	    en: "Owners of establishments",
+	    pt: "Donos de estabelecimentos",
+	    es: "Dueños de establecimientos",
+	    fr: "Propriétaires d'établissements"
+	  },
+	  Relatorios_Resistencia: {
+	    en: "Reports in the Resistance",
+	    pt: "Relatórios na Resistência",
+	    es: "Informes en la Resistencia",
+	    fr: "Rapports dans la Résistance"
+	  },
+	  Visitaram_Capivaras: {
+	    en: "Visited the Capybara Island",
+	    pt: "Visitaram a ilha das Capivaras",
+	    es: "Visitó la isla de las capibaras",
+	    fr: "Ont visité l'île des capybaras"
+	  },
+
+	 Pets_Foolish: {
+	    en: "Foolish's Pets",
+	    pt: "Pets do Foolish",
+	    es: "Mascotas de Foolish",
+	    fr: "Animaux de Foolish"
+	  },
+	  Pets_Richarlyson: {
+	    en: "Richarlyson's Pets",
+	    pt: "Pets do Richarlyson",
+	    es: "Mascotas de Richarlyson",
+	    fr: "Animaux de Richarlyson"
+	  },
+	  Pets_Forever: {
+	    en: "Forever's Pets",
+	    pt: "Pets do Forever",
+	    es: "Mascotas de Forever",
+	    fr: "Animaux de Forever"
+	  },
+	  Pets_Cellbit: {
+	    en: "Cellbit's Pets",
+	    pt: "Pets do Cellbit",
+	    es: "Mascotas de Cellbit",
+	    fr: "Animaux de Cellbit"
+	  }
 };
 
 
