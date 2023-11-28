@@ -494,7 +494,7 @@ export const ALL_CONNECTIONS: {
 "28112023": [
 		{
 			name: "Moradores_Cellbit",
-			items: ["Cellbit", "Roier", "Foolish", "Vegetta"],
+			items: ["Cellbit", "Roier", "Foolish", "Ironmouse"],
 		},
 		{
 			name: "Habitantes_Sacapuntas",
