@@ -509,6 +509,42 @@ export const ALL_CONNECTIONS: {
 			items: ["Pomme", "Dapper", "Richarlyson", "Pepito"],
 		},
 	],
+	"29112023": [
+		{
+			name: "Membros_Resistencia",
+			items: ["Walter Bob", "Etoiles", "Fit", "Pac"],
+		},
+		{
+			name: "Donos_Estabelecimentos",
+			items: ["Roier", "Tazercraft", "Polispol", "Maximus"],
+		},
+		{
+			name: "Relatorios_Resistencia",
+			items: ["Forever", "Kameto", "Foolish", "Jaiden"],
+		},
+		{
+			name: "Visitaram_Capivaras",
+			items: ["Bagi", "Missa", "Ironmouse", "Tina"],
+		},
+	],
+	"30112023": [
+		{
+			name: "Pets_Foolish",
+			items: ["Rey", "Tubas", "Quincy", "Drip"],
+		},
+		{
+			name: "Pets_Richarlyson",
+			items: ["Papaguai", "Chinelo", "Periquito", "Bobby"],
+		},
+		{
+			name: "Pets_Forever",
+			items: ["Peixe", "Zombilaum", "Jorginho", "O POMBO"],
+		},
+		{
+			name: "Pets_Cellbit",
+			items: ["Pirulito", "Roberto", "Maid", "Gengibre"],
+		},
+	],
 };
 
 /*
