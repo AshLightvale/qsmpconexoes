@@ -529,20 +529,56 @@ export const ALL_CONNECTIONS: {
 	],
 	"30112023": [
 		{
-			name: "Pets_Foolish",
-			items: ["Rey", "Tubas", "Quincy", "Drip"],
+			name: "Sem_Casa",
+			items: ["Felps", "German", "Lenay", "Kameto"],
 		},
 		{
-			name: "Pets_Richarlyson",
-			items: ["Papaguai", "Chinelo", "Periquito", "Bobby"],
+			name: "Cheragam_Separadamente",
+			items: ["ElQuackity", "Rubius", "Carre", "Bagi"],
 		},
 		{
-			name: "Pets_Forever",
-			items: ["Peixe", "Zombilaum", "Jorginho", "O POMBO"],
+			name: "Hibridos_Passaros",
+			items: ["Quackity", "Philza", "Baghera", "Jaiden"],
 		},
 		{
-			name: "Pets_Cellbit",
-			items: ["Pirulito", "Roberto", "Maid", "Gengibre"],
+			name: "Espanhois",
+			items: ["Willy", "Vegetta", "Maximus", "Luzu"],
+		},
+	],
+	"1122023": [
+		{
+			name: "Britanicos",
+			items: ["Wilbursoot", "Tubbo", "Philza", "DanTDM"],
+		},
+		{
+			name: "Mexicanos",
+			items: ["Rivers", "Roier", "Missa", "ElMariana"],
+		},		
+		{
+			name: "Detetives",
+			items: ["Cellbit", "Bagi", "Maximus", "Foolish"],
+		},
+		{
+			name: "Membros_Seita",
+			items: ["Antoine", "Richarlyson", "Pac", "Mike"],
+		},
+	],
+	"2122023": [
+		{
+			name: "Personagens_Olhos_Azuis",
+			items: ["Lenay", "Philza", "Aypierre", "Arin"],
+		},
+		{
+			name: "Personagens_Olhos_Verdes",
+			items: ["Slimecicle", "Willy", "Carre", "Mike"],
+		},
+		{
+			name: "Habitantes_Tubhaus",
+			items: ["Foolish", "Tubbo", "Sunny", "Richarlyson"],
+		},
+		{
+			name: "Ovos_Chapeus",
+			items: ["Trump", "Dapper", "Leonarda", "Pomme"],
 		},
 	],
 };
