@@ -201,11 +201,11 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  es: "'Hijos' del Etoiles",
 	  fr: "'Enfants' d'Etoiles",
 	},
+//--------------------------
 
 
-
-	  Membros_Resistencia: {
-	    en: "Members of the Resistance",
+	  Sem_Casa: {
+	    en: "Jogadores sem Casa",
 	    pt: "Membros da Resistência",
 	    es: "Miembros de la Resistencia",
 	    fr: "Membres de la Résistance"
@@ -228,30 +228,83 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	    es: "Visitó la isla de las capibaras",
 	    fr: "Ont visité l'île des capybaras"
 	  },
+//--------------------------
+	
+	  Sem_Casa: {
+	    en: "Players without a Home",
+	    pt: "Jogadores sem Casa",
+	    es: "Jugadores sin hogar",
+	    fr: "Joueurs sans domicile"
+	  },
+	  Cheragam_Separadamente: {
+	    en: "Arrived separately",
+	    pt: "Chegaram separadamente",
+	    es: "Llegaron por separado",
+	    fr: "Arrivés séparément"
+	  },
+	  Hibridos_Passaros: {
+	    en: "Bird Hybrids",
+	    pt: "Híbridos de Pássaros",
+	    es: "Híbridos de pájaros",
+	    fr: "Hybrides d'oiseaux"
+	  },
+	  Espanhois: {
+	    en: "Spaniards",
+	    pt: "Espanhois",
+	    es: "Españoles",
+	    fr: "Espagnols"
+	  },
+//--------------------------
+	
+	  Britanicos: {
+	    en: "British",
+	    pt: "Britânicos",
+	    es: "Británicos",
+	    fr: "Britanniques"
+	  },
+	  Mexicanos: {
+	    en: "Mexicans",
+	    pt: "Mexicanos",
+	    es: "Mexicanos",
+	    fr: "Mexicains"
+	  },
+	  Detetives: {
+	    en: "Detectives",
+	    pt: "Detetives",
+	    es: "Detectives",
+	    fr: "Détectives"
+	  },
+	  Membros_Seita: {
+	    en: "Members of the Masked Sect",
+	    pt: "Membros da Seita das máscaras",
+	    es: "Miembros de la Secta de las Máscaras",
+	    fr: "Membres de la Secte des Masques"
+	  },
+//--------------------------
 
-	 Pets_Foolish: {
-	    en: "Foolish's Pets",
-	    pt: "Pets do Foolish",
-	    es: "Mascotas de Foolish",
-	    fr: "Animaux de Foolish"
+	Personagens_Olhos_Azuis: {
+	    en: "Characters with Blue Eyes",
+	    pt: "Personagens com olhos azuis",
+	    es: "Personajes con ojos azules",
+	    fr: "Personnages aux yeux bleus"
 	  },
-	  Pets_Richarlyson: {
-	    en: "Richarlyson's Pets",
-	    pt: "Pets do Richarlyson",
-	    es: "Mascotas de Richarlyson",
-	    fr: "Animaux de Richarlyson"
+	  Personagens_Olhos_Verdes: {
+	    en: "Characters with Green Eyes",
+	    pt: "Personagens com olhos verdes",
+	    es: "Personajes con ojos verdes",
+	    fr: "Personnages aux yeux verts"
 	  },
-	  Pets_Forever: {
-	    en: "Forever's Pets",
-	    pt: "Pets do Forever",
-	    es: "Mascotas de Forever",
-	    fr: "Animaux de Forever"
+	  Habitantes_Tubhaus: {
+	    en: "Inhabitants of Tubhaus",
+	    pt: "Habitantes da Tubhaus",
+	    es: "Habitantes de Tubhaus",
+	    fr: "Habitants de Tubhaus"
 	  },
-	  Pets_Cellbit: {
-	    en: "Cellbit's Pets",
-	    pt: "Pets do Cellbit",
-	    es: "Mascotas de Cellbit",
-	    fr: "Animaux de Cellbit"
+	  Ovos_Chapeus: {
+	    en: "Eggs with Hats",
+	    pt: "Ovos com Chapéus",
+	    es: "Huevos con sombreros",
+	    fr: "Œufs avec des chapeaux"
 	  }
 };
 
