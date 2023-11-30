@@ -204,7 +204,7 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 //--------------------------
 
 
-	  Sem_Casa: {
+	  : {
 	    en: "Jogadores sem Casa",
 	    pt: "Membros da Resistência",
 	    es: "Miembros de la Resistencia",
