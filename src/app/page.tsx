@@ -203,13 +203,6 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	},
 //--------------------------
 
-
-	  : {
-	    en: "Jogadores sem Casa",
-	    pt: "Membros da Resistência",
-	    es: "Miembros de la Resistencia",
-	    fr: "Membres de la Résistance"
-	  },
 	  Donos_Estabelecimentos: {
 	    en: "Owners of establishments",
 	    pt: "Donos de estabelecimentos",
