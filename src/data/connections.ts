@@ -581,6 +581,60 @@ export const ALL_CONNECTIONS: {
 			items: ["Trump", "Dapper", "Leonarda", "Pomme"],
 		},
 	],
+	"3122023": [
+		{
+			name: "Time_Baghera",
+			items: ["Cellbit", "Jaiden", "Etoiles", "Baghera"],
+		},
+		{
+			name: "Roleta",
+			items: ["Bagi", "Carre", "Tubbo", "Philza"],
+		},
+		{
+			name: "Jogadores_Ameacaram",
+			items: ["ElQuackity", "Forever", "Slimecicle", "ElMariana"],
+		},
+		{
+			name: "Falam_Idiomas",
+			items: ["Rubius", "Tina", "Nihachu", "Ironmouse"],
+		},
+	],
+	"4122023": [
+		{
+			name: "Escritorios",
+			items: ["Cellbit", "WA02", "Foolish", "Cucurucho"],
+		},
+		{
+			name: "Casa_Roier",
+			items: ["Jaiden", "Missa", "Spreen", "ElMariana"],
+		},
+		{
+			name: "Relacionados_Mike",
+			items: ["Pac", "Richarlyson", "Slimecicle", "Mine"],
+		},
+		{
+			name: "Relacionados_BadBoyHalo",
+			items: ["Trump", "Dapper", "Leonarda", "Pomme"],
+		},
+	],
+		"2122023": [
+		{
+			name: "s",
+			items: ["Leonarda", "Cucurucho", "Foolish", "Baghera"],
+		},
+		{
+			name: "Atacados_Codigos",
+			items: ["Etoiles", "Arin", "Cellbit", "Maximus"],
+		},
+		{
+			name: "Relacionados_Ramon",
+			items: ["Fit", "Spreen", "Pac", "Dapper"],
+		},
+		{
+			name: "Capuz",
+			items: ["Carre", "ElQuackity", "BadBoyHalo", "Hombre Misterioso"],
+		},
+	],
 };
 
 /*
