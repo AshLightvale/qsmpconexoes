@@ -617,7 +617,7 @@ export const ALL_CONNECTIONS: {
 			items: ["Trump", "Dapper", "Leonarda", "Pomme"],
 		},
 	],
-		"2122023": [
+	"5122023": [
 		{
 			name: "s",
 			items: ["Leonarda", "Cucurucho", "Foolish", "Baghera"],
