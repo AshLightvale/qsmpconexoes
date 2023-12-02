@@ -101,152 +101,6 @@ es: {
 };
 
 const connectionNameTranslations: { [name: string]: { [key: string]: string } } = {
-	  Ovos_Roier: {
-	    en: "Eggs related to Roier",
-	    pt: "Ovos relacionados ao Roier",
-	    es: "Huevos relacionados con Roier",
-	    fr: "Œufs liés à Roier",
-	  },
-	  Jogadores_Mortos: {
-	    en: "Players with dead characters",
-	    pt: "Jogadores com personagens mortos",
-	    es: "Jugadores con personajes muertos",
-	    fr: "Joueurs avec des personnages morts",
-	  },
-	  Sunny_Pais: {
-	    en: "Sunny's Parents",
-	    pt: "Pais da Sunny",
-	    es: "Padres de Sunny",
-	    fr: "Parents de Sunny",
-	  },
-	  Ovos_Maes: {
-	    en: "Eggs that have mom(s)",
-	    pt: "Ovos que tem mães(s)",
-	    es: "Huevos que tienen madre(s)",
-	    fr: "Œufs qui ont mère(s)",
-	  },
-//--------------------------
-	RadioEgg: {
-		en: "RadioEgg Members",
-		pt: "Membros do RadioEgg",
-	  	es: "Miembros de RadioEgg",
-	 	fr: "Membres de RadioEgg",
-	},
-	Ovos_Pesadelos: {
-		en: "Eggs that died in 'Nightmares'",
-	    	pt: "Ovos que morreram em 'Pesadelos'",
-	  	es: "Huevos que murieron en 'Pesadillas'",
-	  	fr: "Œufs morts dans les 'Cauchemars'",
-	},
-	Relacionados_Quackity: {
-		en: "Related to Quackity",
-	    	pt: "Relacionados ao Quackity",
-	  	es: "Relacionados con Quackity",
-	  	fr: "En rapport avec Quackity",
-	},
-	Relacionados_Slimecicle: {
-		en: "Related to Slimecicle",
-	    	pt: "Relacionados ao Slimecicle",
-	  	es: "Relacionados con Slimecicle",
-	  	fr: "En rapport avec Slimecicle",
-	},
-//--------------------------
-	Trabalharam_Casualonas: {
-	  en: "Worked at Casualonas",
-	  pt: "Trabalharam na Casualonas",
-	  es: "Trabajaron en Casualonas",
-	  fr: "Ont travaillé chez Casualonas",
-	},
-	Farms_Create: {
-	  en: "Have made various Create Farms",
-	  pt: "Fizeram diversas Farms usando Create",
-	  es: "Han creado varias Farms con Create",
-	  fr: "Ont créé plusieurs fermes avec Create",
-	},
-	Ganharam_Ovos: {
-	  en: "Have gotten new eggs",
-	  pt: "Ganharam ovos novos",
-	  es: "Han obtenido nuevos huevos",
-	  fr: "Ont obtenu de nouveaux œufs",
-	},
-	Parentes_Forever: {
-	  en: "Forever's Co-Parents",
-	  pt: "Co-Parentes do Forever",
-	  es: "Co-padres de Forever",
-	  fr: "Co-parents de Forever",
-	},
-//--------------------------
-	
-	Moradores_Cellbit: {
-	  en: "Residents of Cellbit's Castle",
-	  pt: "Moradores do Castelo do Cellbit",
-	  es: "Moradores del Castillo de Cellbit",
-	  fr: "Résidents du château de Cellbit",
-	},
-	Habitantes_Sacapuntas: {
-	  en: "Former inhabitants of Sacapuntas",
-	  pt: "Antigos habitantes de Sacapuntas",
-	  es: "Antiguos habitantes de Sacapuntas",
-	  fr: "Anciens habitants de Sacapuntas",
-	},
-	Tios_Richarlyson: {
-	  en: "Uncles/Aunts of Richarlyson",
-	  pt: "Tios/Tias do Richarlyson",
-	  es: "Tíos/Tías de Richarlyson",
-	  fr: "Oncles/Tantes de Richarlyson",
-	},
-	Filhos_Etoiles: {
-	  en: "Etoiles's 'Children'",
-	  pt: "'Filhos' do Etoiles",
-	  es: "'Hijos' del Etoiles",
-	  fr: "'Enfants' d'Etoiles",
-	},
-//--------------------------
-
-	  Donos_Estabelecimentos: {
-	    en: "Owners of establishments",
-	    pt: "Donos de estabelecimentos",
-	    es: "Dueños de establecimientos",
-	    fr: "Propriétaires d'établissements"
-	  },
-	  Relatorios_Resistencia: {
-	    en: "Reports in the Resistance",
-	    pt: "Relatórios na Resistência",
-	    es: "Informes en la Resistencia",
-	    fr: "Rapports dans la Résistance"
-	  },
-	  Visitaram_Capivaras: {
-	    en: "Visited the Capybara Island",
-	    pt: "Visitaram a ilha das Capivaras",
-	    es: "Visitó la isla de las capibaras",
-	    fr: "Ont visité l'île des capybaras"
-	  },
-//--------------------------
-	
-	  Sem_Casa: {
-	    en: "Players without a Home",
-	    pt: "Jogadores sem Casa",
-	    es: "Jugadores sin hogar",
-	    fr: "Joueurs sans domicile"
-	  },
-	  Cheragam_Separadamente: {
-	    en: "Arrived separately",
-	    pt: "Chegaram separadamente",
-	    es: "Llegaron por separado",
-	    fr: "Arrivés séparément"
-	  },
-	  Hibridos_Passaros: {
-	    en: "Bird Hybrids",
-	    pt: "Híbridos de Pássaros",
-	    es: "Híbridos de pájaros",
-	    fr: "Hybrides d'oiseaux"
-	  },
-	  Espanhois: {
-	    en: "Spaniards",
-	    pt: "Espanhois",
-	    es: "Españoles",
-	    fr: "Espagnols"
-	  },
 //--------------------------
 	
 	  Britanicos: {
@@ -298,7 +152,86 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	    pt: "Ovos com Chapéus",
 	    es: "Huevos con sombreros",
 	    fr: "Œufs avec des chapeaux"
-	  }
+	  },
+//--------------------------
+
+	  Time_Baghera: {
+	    en: "Team Baghera Members",
+	    pt: "Membros do Time Baghera",
+	    es: "Miembros del Equipo Baghera",
+	    fr: "Membres de l'équipe Baghera",
+	  },
+	  Roleta: {
+	    en: "Spun the Roulette",
+	    pt: "Giraram a roleta",
+	    es: "Giraron la Ruleta",
+	    fr: "Ont fait tourner la roulette",
+	  },
+	  Jogadores_Ameacaram: {
+	    en: "Threatened Eggs",
+	    pt: "Ameaçaram ovos",
+	    es: "Amenazaron huevos",
+	    fr: "Ont menacé des œufs",
+	  },
+	  Falam_Idiomas: {
+	    en: "Speak Languages not in QSMP",
+	    pt: "Falam idiomas que não estão no QSMP",
+	    es: "Hablan idiomas que no están en el QSMP",
+	    fr: "Parlent des langues qui ne sont pas dans le QSMP",
+	  },
+//--------------------------
+
+	  Escritorios: {
+	    en: "Have Offices in the Federation",
+	    pt: "Tem escritórios na Federação",
+	    es: "Tienen oficinas en la Federación",
+	    fr: "Ont des bureaux dans la Fédération",
+	  },
+	  Casa_Roier: {
+	    en: "Lived in Roier's House",
+	    pt: "Moraram na casa do Roier",
+	    es: "Vivieron en la casa de Roier",
+	    fr: "Ont vécu dans la maison de Roier",
+	  },
+	  Relacionados_Mike: {
+	    en: "Related to Mike",
+	    pt: "Relacionados ao Mike",
+	    es: "Relacionados con Mike",
+	    fr: "Liés à Mike",
+	  },
+	  Relacionados_BadBoyHalo: {
+	    en: "Related to BadBoyHalo",
+	    pt: "Relacionados ao BadBoyHalo",
+	    es: "Relacionados con BadBoyHalo",
+	    fr: "Liés à BadBoyHalo",
+	  },
+//--------------------------
+
+	  Visitaram_Bobby: {
+	    en: "Visited Bobby Fields",
+	    pt: "Visitaram o Bobby Fields",
+	    es: "Visitó a Bobby Fields",
+	    fr: "A visité Bobby Fields",
+	  },
+	  Atacados_Codigos: {
+	    en: "Attacked by Codes",
+	    pt: "Atacados por Códigos",
+	    es: "Atacados por códigos",
+	    fr: "Attaqués par des codes",
+	  },
+	  Relacionados_Ramon: {
+	    en: "Related to Ramon",
+	    pt: "Relacionados ao Ramon",
+	    es: "Relacionados con Ramon",
+	    fr: "Liés à Ramon",
+	  },
+	  Capuz: {
+	    en: "Individuals who wear hoodies",
+	    pt: "Indivíduos que usam capuz",
+	    es: "Individuos que usan capuchas",
+	    fr: "Personnes qui portent des sweat-shirts à capuche",
+	  },
+
 };
 
 
