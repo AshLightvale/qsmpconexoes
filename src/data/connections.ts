@@ -614,7 +614,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Relacionados_BadBoyHalo",
-			items: ["Trump", "Dapper", "Leonarda", "Pomme"],
+			items: ["Forever", "Dapper", "Pomme", "Baghera"],
 		},
 	],
 	"5122023": [
