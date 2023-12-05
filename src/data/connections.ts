@@ -635,6 +635,25 @@ export const ALL_CONNECTIONS: {
 			items: ["Carre", "ElQuackity", "BadBoyHalo", "Hombre Misterioso"],
 		},
 	],
+	"6122023": [
+		{
+			name: "Ovos_Primos_Richarlyson",
+			items: ["Pomme", "Dapper", "Sunny", "Juanaflippa"],
+		},
+		{
+			name: "Nenhuma_Impossivel",
+			items: ["Pac", "Mike", "Fit", "Walter Bob"],
+		},
+		{
+			name: "Guardas_Federacao",
+			items: ["Dave", "Agent 18", "Fish", "DMr. Bubbles"],
+		},
+		{
+			name: "Familia_Brown",
+			items: ["Roier", "Leonarda", "Foolish", "Vegetta"],
+		},
+	],
+
 };
 
 /*
