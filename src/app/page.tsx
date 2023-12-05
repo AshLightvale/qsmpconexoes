@@ -101,86 +101,6 @@ es: {
 };
 
 const connectionNameTranslations: { [name: string]: { [key: string]: string } } = {
-//--------------------------
-	
-	  Britanicos: {
-	    en: "British",
-	    pt: "Britânicos",
-	    es: "Británicos",
-	    fr: "Britanniques"
-	  },
-	  Mexicanos: {
-	    en: "Mexicans",
-	    pt: "Mexicanos",
-	    es: "Mexicanos",
-	    fr: "Mexicains"
-	  },
-	  Detetives: {
-	    en: "Detectives",
-	    pt: "Detetives",
-	    es: "Detectives",
-	    fr: "Détectives"
-	  },
-	  Membros_Seita: {
-	    en: "Members of the Masked Sect",
-	    pt: "Membros da Seita das máscaras",
-	    es: "Miembros de la Secta de las Máscaras",
-	    fr: "Membres de la Secte des Masques"
-	  },
-//--------------------------
-
-	Personagens_Olhos_Azuis: {
-	    en: "Characters with Blue Eyes",
-	    pt: "Personagens com olhos azuis",
-	    es: "Personajes con ojos azules",
-	    fr: "Personnages aux yeux bleus"
-	  },
-	  Personagens_Olhos_Verdes: {
-	    en: "Characters with Green Eyes",
-	    pt: "Personagens com olhos verdes",
-	    es: "Personajes con ojos verdes",
-	    fr: "Personnages aux yeux verts"
-	  },
-	  Habitantes_Tubhaus: {
-	    en: "Inhabitants of Tubhaus",
-	    pt: "Habitantes da Tubhaus",
-	    es: "Habitantes de Tubhaus",
-	    fr: "Habitants de Tubhaus"
-	  },
-	  Ovos_Chapeus: {
-	    en: "Eggs with Hats",
-	    pt: "Ovos com Chapéus",
-	    es: "Huevos con sombreros",
-	    fr: "Œufs avec des chapeaux"
-	  },
-//--------------------------
-
-	  Time_Baghera: {
-	    en: "Team Baghera Members",
-	    pt: "Membros do Time Baghera",
-	    es: "Miembros del Equipo Baghera",
-	    fr: "Membres de l'équipe Baghera",
-	  },
-	  Roleta: {
-	    en: "Spun the Roulette",
-	    pt: "Giraram a roleta",
-	    es: "Giraron la Ruleta",
-	    fr: "Ont fait tourner la roulette",
-	  },
-	  Jogadores_Ameacaram: {
-	    en: "Threatened Eggs",
-	    pt: "Ameaçaram ovos",
-	    es: "Amenazaron huevos",
-	    fr: "Ont menacé des œufs",
-	  },
-	  Falam_Idiomas: {
-	    en: "Speak Languages not in QSMP",
-	    pt: "Falam idiomas que não estão no QSMP",
-	    es: "Hablan idiomas que no están en el QSMP",
-	    fr: "Parlent des langues qui ne sont pas dans le QSMP",
-	  },
-//--------------------------
-
 	  Escritorios: {
 	    en: "Have Offices in the Federation",
 	    pt: "Tem escritórios na Federação",
@@ -231,7 +151,32 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	    es: "Individuos que usan capuchas",
 	    fr: "Personnes qui portent des sweat-shirts à capuche",
 	  },
+//--------------------------
 
+	Ovos_Primos_Richarlyson: {
+	  en: "Richarlyson's Cousin Eggs",
+	  pt: "Ovos primos do Richarlyson",
+	  es: "Huevos primos de Richarlyson",
+	  fr: "Œufs cousins de Richarlyson",
+	},
+	Nenhuma_Impossivel: {
+	  en: "Participated in No Escape is Impossible",
+	  pt: "Participaram do Nenhuma fuga é impossível",
+	  es: "Parte de Ninguna fuga es imposible",
+	  fr: "Fait partie de Aucune évasion n'est impossible",
+	},
+	Guardas_Federacao: {
+	  en: "Federation Guards",
+	  pt: "Guardas da Federação",
+	  es: "Guardias de la Federación",
+	  fr: "Gardes de la Fédération",
+	},
+	Familia_Brown: {
+	  en: "Family Brown",
+	  pt: "Família Brown",
+	  es: "Familia Brown",
+	  fr: "Famille Brown",
+	},
 };
 
 
