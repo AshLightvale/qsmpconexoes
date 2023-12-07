@@ -653,7 +653,24 @@ export const ALL_CONNECTIONS: {
 			items: ["Roier", "Leonarda", "Foolish", "Vegetta"],
 		},
 	],
-
+	"7122023": [
+		{
+			name: "Alcatraz",
+			items: ["TazerCraft", "Cellbit", "Felps", "Bagi"],
+		},
+		{
+			name: "Risus_Potion",
+			items: ["Foolish", "BadBoyHalo", "Ironmouse", "Cucurucho"],
+		},
+		{
+			name: "Mataram_Trabalhadores",
+			items: ["Quackity", "Mike", "Etoiles", "Cellbit"],
+		},
+		{
+			name: "Isla_Furro",
+			items: ["Forever", "Aypierre", "Tallulah", "Leonarda"],
+		},
+	],
 };
 
 /*
