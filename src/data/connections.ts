@@ -656,7 +656,7 @@ export const ALL_CONNECTIONS: {
 	"7122023": [
 		{
 			name: "Alcatraz",
-			items: ["TazerCraft", "Cellbit", "Felps", "Bagi"],
+			items: ["TazerCraft", "JVNQ", "Felps", "Bagi"],
 		},
 		{
 			name: "Risus_Potion",
