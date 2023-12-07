@@ -655,12 +655,12 @@ export const ALL_CONNECTIONS: {
 	],
 	"7122023": [
 		{
-			name: "Alcatraz",
-			items: ["TazerCraft", "JVNQ", "Felps", "Bagi"],
+			name: "Estatuas",
+			items: ["Cucurucho", "Vegetta", "JuanaFlippa", "Bobby"],
 		},
 		{
 			name: "Risus_Potion",
-			items: ["Foolish", "BadBoyHalo", "Ironmouse", "Cucurucho"],
+			items: ["Foolish", "BadBoyHalo", "Ironmouse", "Ordo Theoritas"],
 		},
 		{
 			name: "Mataram_Trabalhadores",
