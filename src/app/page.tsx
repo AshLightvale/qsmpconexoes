@@ -101,32 +101,6 @@ es: {
 };
 
 const connectionNameTranslations: { [name: string]: { [key: string]: string } } = {
-	  Escritorios: {
-	    en: "Have Offices in the Federation",
-	    pt: "Tem escritórios na Federação",
-	    es: "Tienen oficinas en la Federación",
-	    fr: "Ont des bureaux dans la Fédération",
-	  },
-	  Casa_Roier: {
-	    en: "Lived in Roier's House",
-	    pt: "Moraram na casa do Roier",
-	    es: "Vivieron en la casa de Roier",
-	    fr: "Ont vécu dans la maison de Roier",
-	  },
-	  Relacionados_Mike: {
-	    en: "Related to Mike",
-	    pt: "Relacionados ao Mike",
-	    es: "Relacionados con Mike",
-	    fr: "Liés à Mike",
-	  },
-	  Relacionados_BadBoyHalo: {
-	    en: "Related to BadBoyHalo",
-	    pt: "Relacionados ao BadBoyHalo",
-	    es: "Relacionados con BadBoyHalo",
-	    fr: "Liés à BadBoyHalo",
-	  },
-//--------------------------
-
 	  Visitaram_Bobby: {
 	    en: "Visited Bobby Fields",
 	    pt: "Visitaram o Bobby Fields",
@@ -177,6 +151,34 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  es: "Familia Brown",
 	  fr: "Famille Brown",
 	},
+
+//--------------------------
+
+	Alcatraz: {
+	  en: "Were in Alcatraz",
+	  pt: "Estiveram em Alcatraz",
+	  es: "Estuvieron en Alcatraz",
+	  fr: "Étaient à Alcatraz",
+	},
+	Risus_Potion: {
+	  en: "Possess Risus Potions",
+	  pt: "Possuem Risus Potions",
+	  es: "Poseen Pociones de Risus",
+	  fr: "Possèdent des Potions de Risus",
+	},
+	Mataram_Trabalhadores: {
+	  en: "Killed workers",
+	  pt: "Mataram trabalhadores",
+	  es: "Mató a trabajadores",
+	  fr: "Ont tué des travailleurs",
+	},
+	Isla_Furro: {
+	  en: "Invited to Isla Furro",
+	  pt: "Convidados para a Isla Furro",
+	  es: "Invitados a Isla Furro",
+	  fr: "Invités à l'Isla Furro",
+	},
+
 };
 
 
