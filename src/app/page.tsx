@@ -160,6 +160,12 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  es: "Estuvieron en Alcatraz",
 	  fr: "Étaient à Alcatraz",
 	},
+	Estatuas: {
+	  en: "Had/Have statues",
+	  pt: "Tiveram/Têm estátuas",
+	  es: "Tenían/Tienen estatuas",
+	  fr: "Avaient/Ont des statues",
+	},
 	Risus_Potion: {
 	  en: "Possess Risus Potions",
 	  pt: "Possuem Risus Potions",
