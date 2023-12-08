@@ -686,7 +686,7 @@ export const ALL_CONNECTIONS: {
 		},
 		{
 			name: "Anglofonos_Direita",
-			items: ["Jaiden", "Foolish", "DanTDM", "BadBoyHalo"],
+			items: ["Jaiden", "Foolish", "Quackity", "BadBoyHalo"],
 		},
 	],
 };
