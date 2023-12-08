@@ -671,6 +671,24 @@ export const ALL_CONNECTIONS: {
 			items: ["Forever", "Aypierre", "Tallulah", "Leonarda"],
 		},
 	],
+	"8122023": [
+		{
+			name: "Relacionados_Maximus",
+			items: ["Trump", "Arin", "Aypierre", "DanTDM"],
+		},
+		{
+			name: "Ovos_Locais",
+			items: ["Bobby", "Ramon", "Dapper", "Richarlyson"],
+		},
+		{
+			name: "Fizeram_Acordos",
+			items: ["Spreen", "Slimicicle", "Maximus", "Vegetta"],
+		},
+		{
+			name: "Anglofonos_Direita",
+			items: ["Jaiden", "Foolish", "DanTDM", "BadBoyHalo"],
+		},
+	],
 };
 
 /*
