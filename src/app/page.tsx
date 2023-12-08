@@ -184,7 +184,35 @@ const connectionNameTranslations: { [name: string]: { [key: string]: string } } 
 	  es: "Invitados a Isla Furro",
 	  fr: "Invités à l'Isla Furro",
 	},
+//------------------------------------------------
+	
+	Relacionados_Maximus: {
+	  en: "Related to Maximus",
+	  pt: "Relacionados ao Maximus",
+	  es: "Relacionados con Maximus",
+	  fr: "Liés à Maximus",
+	},
+	Ovos_Locais: {
+	  en: "Eggs with places that bear their name",
+	  pt: "Ovos com locais que possuem o nome deles",
+	  es: "Huevos con lugares que llevan su nombre",
+	  fr: "Œufs avec des endroits qui portent leur nom",
+	},
+	Fizeram_Acordos: {
+	  en: "Made deals with the Devil",
+	  pt: "Fizeram acordos com o Demônio",
+	  es: "Hicieron tratos con el Diablo",
+	  fr: "Ont fait des affaires avec le Diable",
+	},
+	Anglofonos_Direita: {
+	  en: "Anglophones who arrived by the right train",
+	  pt: "Anglófonos que chegaram pelos trens da direita",
+	  es: "Anglófonos que llegaron en el tren correcto",
+	  fr: "Anglophones arrivés par le bon train",
+	},
 
+
+	
 };
 
 
